@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<album>
+<albumName>Heroes</albumName>
+<albumItemCount>10</albumItemCount>
+<albumCaption></albumCaption>
+<images>
+<image>
+	<isFirstImage>
+		true
+	</isFirstImage>
+	
+	
+	
+	<isPrevImage>
+		false
+	</isPrevImage>
+	<prevImage />
+	
+	
+	<isLastImage>
+		false
+	</isLastImage>
+	
+	<isNextImage>
+		true
+	</isNextImage>
+	
+	
+
+
+	<firstImage>
+		images/heroes_nbc_season_2_episode_5_fight_or_flight.jpg
+	</firstImage>
+	<itemLargeImage>
+		images/heroes_nbc_season_2_episode_5_fight_or_flight.jpg
+	</itemLargeImage>	
+	<nextImage>
+		heroes_season_2_episode_01_cast_2008.jpg
+	</nextImage>
+	<nextThumbnail>
+		heroes_season_2_episode_01_cast_2008.jpg
+	</nextThumbnail>
+	<prevImage>
+		
+	</prevImage>
+	<prevThumbnail>
+		
+	</prevThumbnail>
+	<lastImage>
+		images/heroes_wallpaper2y_1280.jpg
+	</lastImage>
+	<lastThumbnail>
+		thumbnails/heroes_wallpaper2y_1280.jpg
+	</lastThumbnail>
+
+	<itemWidth>
+		288
+	</itemWidth>
+
+	<itemHeight>
+		257
+	</itemHeight>
+
+	<itemThumbnailImage>
+		thumbnails/heroes_nbc_season_2_episode_5_fight_or_flight.jpg
+	</itemThumbnailImage>
+
+	<itemThumbnailWidth>
+		90
+	</itemThumbnailWidth>
+
+	<itemThumbnailHeight>
+		81
+	</itemThumbnailHeight>
+
+	<itemName>
+		heroes_nbc_season_2_episode_5_fight_or_flight.jpg
+	</itemName>
+
+	<itemNumber>
+		47
+	</itemNumber>
+
+	<itemOriginalPath>
+		d:\my documents\my pictures\heroes\heroes-nbc-season-2-episode-5-fight-or-flight.jpg
+	</itemOriginalPath>
+
+
+	<itemNameOnly>
+		itemNameOnly UNDEFINED (9)
+	</itemNameOnly>
+	
+	<itemCaption>
+		heroes_nbc_season_2_episode_5_fight_or_flight.jpg
+	</itemCaption>
+
+	<itemSize>
+		itemSize UNDEFINED (9)
+	</itemSize>
+</image>
+<image>
+	
+	<isFirstImage>
+		false
+	</isFirstImage>
+	
+	<isPrevImage>
+		true
+	</isPrevImage>
+	
+	
+	
+	<isLastImage>
+		false
+	</isLastImage>
+	
+	<isNextImage>
+		true
+	</isNextImage>
+	
+	
+
+
+	<firstImage>
+		images/heroes_nbc_season_2_episode_5_fight_or_flight.jpg
+	</firstImage>
+	<itemLargeImage>
+		images/heroes_season_2_episode_01_cast_2008.jpg
+	</itemLargeImage>	
+	<nextImage>
+		heroes_season2.jpg
+	</nextImage>
+	<nextThumbnail>
+		heroes_season2.jpg
+	</nextThumbnail>
+	<prevImage>
+		heroes_nbc_season_2_episode_5_fight_or_flight.jpg
+	</prevImage>
+	<prevThumbnail>
+		heroes_nbc_season_2_episode_5_fight_or_flight.jpg
+	</prevThumbnail>
+	<lastImage>
+		images/heroes_wallpaper2y_1280.jpg
+	</lastImage>
+	<lastThumbnail>
+		thumbnails/heroes_wallpaper2y_1280.jpg
+	</lastThumbnail>
+
+	<itemWidth>
+		504
+	</itemWidth>
+
+	<itemHeight>
+		378
+	</itemHeight>
+
+	<itemThumbnailImage>
+		thumbnails/heroes_season_2_episode_01_cast_2008.jpg
+	</itemThumbnailImage>
+
+	<itemThumbnailWidth>
+		90
+	</itemThumbnailWidth>
+
+	<itemThumbnailHeight>
+		70
+	</itemThumbnailHeight>
+
+	<itemName>
+		heroes_season_2_episode_01_cast_2008.jpg
+	</itemName>
+
+	<itemNumber>
+		48
+	</itemNumber>
+
+	<itemOriginalPath>
+		d:\my documents\my pictures\heroes\heroes-season-2-episode-01-cast-2008.jpg
+	</itemOriginalPath>
+
+
+	<itemNameOnly>
+		itemNameOnly UNDEFINED (9)
+	</itemNameOnly>
+	
+	<itemCaption>
+		heroes_season_2_episode_01_cast_2008.jpg
+	</itemCaption>
+
+	<itemSize>
+		itemSize UNDEFINED (9)
+	</itemSize>
+</image>
+<image>
+	
+	<isFirstImage>
+		false
+	</isFirstImage>
+	
+	<isPrevImage>
+		true
+	</isPrevImage>
+	
+	
+	
+	<isLastImage>
+		false
+	</isLastImage>
+	
+	<isNextImage>
+		true
+	</isNextImage>
+	
+	
+
+
+	<firstImage>
+		images/heroes_nbc_season_2_episode_5_fight_or_flight.jpg
+	</firstImage>
+	<itemLargeImage>
+		images/heroes_season2.jpg
+	</itemLargeImage>	
+	<nextImage>
+		hiro_and_the_dino_portal_jpg.jpg
+	</nextImage>
+	<nextThumbnail>
+		hiro_and_the_dino_portal_jpg.jpg
+	</nextThumbnail>
+	<prevImage>
+		heroes_season_2_episode_01_cast_2008.jpg
+	</prevImage>
+	<prevThumbnail>
+		heroes_season_2_episode_01_cast_2008.jpg
+	</prevThumbnail>
+	<lastImage>
+		images/heroes_wallpaper2y_1280.jpg
+	</lastImage>
+	<lastThumbnail>
+		thumbnails/heroes_wallpaper2y_1280.jpg
+	</lastThumbnail>
+
+	<itemWidth>
+		1024
+	</itemWidth>
+
+	<itemHeight>
+		819
+	</itemHeight>
+
+	<itemThumbnailImage>
+		thumbnails/heroes_season2.jpg
+	</itemThumbnailImage>
+
+	<itemThumbnailWidth>
+		90
+	</itemThumbnailWidth>
+
+	<itemThumbnailHeight>
+		74
+	</itemThumbnailHeight>
+
+	<itemName>
+		heroes_season2.jpg
+	</itemName>
+
+	<itemNumber>
+		50
+	</itemNumber>
+
+	<itemOriginalPath>
+		d:\my documents\my pictures\heroes\heroes_season2.jpg
+	</itemOriginalPath>
+
+
+	<itemNameOnly>
+		itemNameOnly UNDEFINED (9)
+	</itemNameOnly>
+	
+	<itemCaption>
+		heroes_season2.jpg
+	</itemCaption>
+
+	<itemSize>
+		itemSize UNDEFINED (9)
+	</itemSize>
+</image>
+<image>
+	
+	<isFirstImage>
+		false
+	</isFirstImage>
+	
+	<isPrevImage>
+		true
+	</isPrevImage>
+	
+	
+	
+	<isLastImage>
+		false
+	</isLastImage>
+	
+	<isNextImage>
+		true
+	</isNextImage>
+	
+	
+
+
+	<firstImage>
+		images/heroes_nbc_season_2_episode_5_fight_or_flight.jpg
+	</firstImage>
+	<itemLargeImage>
+		images/hiro_and_the_dino_portal_jpg.jpg
+	</itemLargeImage>	
+	<nextImage>
+		heroes_downloads_desktop_season2_1_800x600.jpg
+	</nextImage>
+	<nextThumbnail>
+		heroes_downloads_desktop_season2_1_800x600.jpg
+	</nextThumbnail>
+	<prevImage>
+		heroes_season2.jpg
+	</prevImage>
+	<prevThumbnail>
+		heroes_season2.jpg
+	</prevThumbnail>
+	<lastImage>
+		images/heroes_wallpaper2y_1280.jpg
+	</lastImage>
+	<lastThumbnail>
+		thumbnails/heroes_wallpaper2y_1280.jpg
+	</lastThumbnail>
+
+	<itemWidth>
+		450
+	</itemWidth>
+
+	<itemHeight>
+		350
+	</itemHeight>
+
+	<itemThumbnailImage>
+		thumbnails/hiro_and_the_dino_portal_jpg.jpg
+	</itemThumbnailImage>
+
+	<itemThumbnailWidth>
+		90
+	</itemThumbnailWidth>
+
+	<itemThumbnailHeight>
+		72
+	</itemThumbnailHeight>
+
+	<itemName>
+		hiro_and_the_dino_portal_jpg.jpg
+	</itemName>
+
+	<itemNumber>
+		53
+	</itemNumber>
+
+	<itemOriginalPath>
+		d:\my documents\my pictures\heroes\hiro_and_the_dino_portal.jpg.jpg
+	</itemOriginalPath>
+
+
+	<itemNameOnly>
+		itemNameOnly UNDEFINED (9)
+	</itemNameOnly>
+	
+	<itemCaption>
+		hiro_and_the_dino_portal_jpg.jpg
+	</itemCaption>
+
+	<itemSize>
+		itemSize UNDEFINED (9)
+	</itemSize>
+</image>
+<image>
+	
+	<isFirstImage>
+		false
+	</isFirstImage>
+	
+	<isPrevImage>
+		true
+	</isPrevImage>
+	
+	
+	
+	<isLastImage>
+		false
+	</isLastImage>
+	
+	<isNextImage>
+		true
+	</isNextImage>
+	
+	
+
+
+	<firstImage>
+		images/heroes_nbc_season_2_episode_5_fight_or_flight.jpg
+	</firstImage>
+	<itemLargeImage>
+		images/heroes_downloads_desktop_season2_1_800x600.jpg
+	</itemLargeImage>	
+	<nextImage>
+		heroes_downloads_desktop_group_800x600_02.jpg
+	</nextImage>
+	<nextThumbnail>
+		heroes_downloads_desktop_group_800x600_02.jpg
+	</nextThumbnail>
+	<prevImage>
+		hiro_and_the_dino_portal_jpg.jpg
+	</prevImage>
+	<prevThumbnail>
+		hiro_and_the_dino_portal_jpg.jpg
+	</prevThumbnail>
+	<lastImage>
+		images/heroes_wallpaper2y_1280.jpg
+	</lastImage>
+	<lastThumbnail>
+		thumbnails/heroes_wallpaper2y_1280.jpg
+	</lastThumbnail>
+
+	<itemWidth>
+		800
+	</itemWidth>
+
+	<itemHeight>
+		600
+	</itemHeight>
+
+	<itemThumbnailImage>
+		thumbnails/heroes_downloads_desktop_season2_1_800x600.jpg
+	</itemThumbnailImage>
+
+	<itemThumbnailWidth>
+		90
+	</itemThumbnailWidth>
+
+	<itemThumbnailHeight>
+		70
+	</itemThumbnailHeight>
+
+	<itemName>
+		heroes_downloads_desktop_season2_1_800x600.jpg
+	</itemName>
+
+	<itemNumber>
+		45
+	</itemNumber>
+
+	<itemOriginalPath>
+		d:\my documents\my pictures\heroes\heroes-downloads-desktop-season2-1-800x600.jpg
+	</itemOriginalPath>
+
+
+	<itemNameOnly>
+		itemNameOnly UNDEFINED (9)
+	</itemNameOnly>
+	
+	<itemCaption>
+		heroes_downloads_desktop_season2_1_800x600.jpg
+	</itemCaption>
+
+	<itemSize>
+		itemSize UNDEFINED (9)
+	</itemSize>
+</image>
+<image>
+	
+	<isFirstImage>
+		false
+	</isFirstImage>
+	
+	<isPrevImage>
+		true
+	</isPrevImage>
+	
+	
+	
+	<isLastImage>
+		false
+	</isLastImage>
+	
+	<isNextImage>
+		true
+	</isNextImage>
+	
+	
+
+
+	<firstImage>
+		images/heroes_nbc_season_2_episode_5_fight_or_flight.jpg
+	</firstImage>
+	<itemLargeImage>
+		images/heroes_downloads_desktop_group_800x600_02.jpg
+	</itemLargeImage>	
+	<nextImage>
+		heroes_sized.jpg
+	</nextImage>
+	<nextThumbnail>
+		heroes_sized.jpg
+	</nextThumbnail>
+	<prevImage>
+		heroes_downloads_desktop_season2_1_800x600.jpg
+	</prevImage>
+	<prevThumbnail>
+		heroes_downloads_desktop_season2_1_800x600.jpg
+	</prevThumbnail>
+	<lastImage>
+		images/heroes_wallpaper2y_1280.jpg
+	</lastImage>
+	<lastThumbnail>
+		thumbnails/heroes_wallpaper2y_1280.jpg
+	</lastThumbnail>
+
+	<itemWidth>
+		800
+	</itemWidth>
+
+	<itemHeight>
+		600
+	</itemHeight>
+
+	<itemThumbnailImage>
+		thumbnails/heroes_downloads_desktop_group_800x600_02.jpg
+	</itemThumbnailImage>
+
+	<itemThumbnailWidth>
+		90
+	</itemThumbnailWidth>
+
+	<itemThumbnailHeight>
+		70
+	</itemThumbnailHeight>
+
+	<itemName>
+		heroes_downloads_desktop_group_800x600_02.jpg
+	</itemName>
+
+	<itemNumber>
+		44
+	</itemNumber>
+
+	<itemOriginalPath>
+		d:\my documents\my pictures\heroes\heroes-downloads-desktop-group-800x600-02.jpg
+	</itemOriginalPath>
+
+
+	<itemNameOnly>
+		itemNameOnly UNDEFINED (9)
+	</itemNameOnly>
+	
+	<itemCaption>
+		heroes_downloads_desktop_group_800x600_02.jpg
+	</itemCaption>
+
+	<itemSize>
+		itemSize UNDEFINED (9)
+	</itemSize>
+</image>
+<image>
+	
+	<isFirstImage>
+		false
+	</isFirstImage>
+	
+	<isPrevImage>
+		true
+	</isPrevImage>
+	
+	
+	
+	<isLastImage>
+		false
+	</isLastImage>
+	
+	<isNextImage>
+		true
+	</isNextImage>
+	
+	
+
+
+	<firstImage>
+		images/heroes_nbc_season_2_episode_5_fight_or_flight.jpg
+	</firstImage>
+	<itemLargeImage>
+		images/heroes_sized.jpg
+	</itemLargeImage>	
+	<nextImage>
+		heroes_wallpaper___t3h_symbol_by_shadowcheetah.jpg
+	</nextImage>
+	<nextThumbnail>
+		heroes_wallpaper___t3h_symbol_by_shadowcheetah.jpg
+	</nextThumbnail>
+	<prevImage>
+		heroes_downloads_desktop_group_800x600_02.jpg
+	</prevImage>
+	<prevThumbnail>
+		heroes_downloads_desktop_group_800x600_02.jpg
+	</prevThumbnail>
+	<lastImage>
+		images/heroes_wallpaper2y_1280.jpg
+	</lastImage>
+	<lastThumbnail>
+		thumbnails/heroes_wallpaper2y_1280.jpg
+	</lastThumbnail>
+
+	<itemWidth>
+		1024
+	</itemWidth>
+
+	<itemHeight>
+		819
+	</itemHeight>
+
+	<itemThumbnailImage>
+		thumbnails/heroes_sized.jpg
+	</itemThumbnailImage>
+
+	<itemThumbnailWidth>
+		90
+	</itemThumbnailWidth>
+
+	<itemThumbnailHeight>
+		74
+	</itemThumbnailHeight>
+
+	<itemName>
+		heroes_sized.jpg
+	</itemName>
+
+	<itemNumber>
+		49
+	</itemNumber>
+
+	<itemOriginalPath>
+		d:\my documents\my pictures\heroes\heroes.sized.jpg
+	</itemOriginalPath>
+
+
+	<itemNameOnly>
+		itemNameOnly UNDEFINED (9)
+	</itemNameOnly>
+	
+	<itemCaption>
+		heroes_sized.jpg
+	</itemCaption>
+
+	<itemSize>
+		itemSize UNDEFINED (9)
+	</itemSize>
+</image>
+<image>
+	
+	<isFirstImage>
+		false
+	</isFirstImage>
+	
+	<isPrevImage>
+		true
+	</isPrevImage>
+	
+	
+	
+	<isLastImage>
+		false
+	</isLastImage>
+	
+	<isNextImage>
+		true
+	</isNextImage>
+	
+	
+
+
+	<firstImage>
+		images/heroes_nbc_season_2_episode_5_fight_or_flight.jpg
+	</firstImage>
+	<itemLargeImage>
+		images/heroes_wallpaper___t3h_symbol_by_shadowcheetah.jpg
+	</itemLargeImage>	
+	<nextImage>
+		heroes_heroes_357109_500_400.jpg
+	</nextImage>
+	<nextThumbnail>
+		heroes_heroes_357109_500_400.jpg
+	</nextThumbnail>
+	<prevImage>
+		heroes_sized.jpg
+	</prevImage>
+	<prevThumbnail>
+		heroes_sized.jpg
+	</prevThumbnail>
+	<lastImage>
+		images/heroes_wallpaper2y_1280.jpg
+	</lastImage>
+	<lastThumbnail>
+		thumbnails/heroes_wallpaper2y_1280.jpg
+	</lastThumbnail>
+
+	<itemWidth>
+		1024
+	</itemWidth>
+
+	<itemHeight>
+		768
+	</itemHeight>
+
+	<itemThumbnailImage>
+		thumbnails/heroes_wallpaper___t3h_symbol_by_shadowcheetah.jpg
+	</itemThumbnailImage>
+
+	<itemThumbnailWidth>
+		90
+	</itemThumbnailWidth>
+
+	<itemThumbnailHeight>
+		70
+	</itemThumbnailHeight>
+
+	<itemName>
+		heroes_wallpaper___t3h_symbol_by_shadowcheetah.jpg
+	</itemName>
+
+	<itemNumber>
+		52
+	</itemNumber>
+
+	<itemOriginalPath>
+		d:\my documents\my pictures\heroes\heroes_wallpaper___t3h_symbol_by_shadowcheetah.jpg
+	</itemOriginalPath>
+
+
+	<itemNameOnly>
+		itemNameOnly UNDEFINED (9)
+	</itemNameOnly>
+	
+	<itemCaption>
+		heroes_wallpaper___t3h_symbol_by_shadowcheetah.jpg
+	</itemCaption>
+
+	<itemSize>
+		itemSize UNDEFINED (9)
+	</itemSize>
+</image>
+<image>
+	
+	<isFirstImage>
+		false
+	</isFirstImage>
+	
+	<isPrevImage>
+		true
+	</isPrevImage>
+	
+	
+	
+	<isLastImage>
+		false
+	</isLastImage>
+	
+	<isNextImage>
+		true
+	</isNextImage>
+	
+	
+
+
+	<firstImage>
+		images/heroes_nbc_season_2_episode_5_fight_or_flight.jpg
+	</firstImage>
+	<itemLargeImage>
+		images/heroes_heroes_357109_500_400.jpg
+	</itemLargeImage>	
+	<nextImage>
+		heroes_wallpaper2y_1280.jpg
+	</nextImage>
+	<nextThumbnail>
+		heroes_wallpaper2y_1280.jpg
+	</nextThumbnail>
+	<prevImage>
+		heroes_wallpaper___t3h_symbol_by_shadowcheetah.jpg
+	</prevImage>
+	<prevThumbnail>
+		heroes_wallpaper___t3h_symbol_by_shadowcheetah.jpg
+	</prevThumbnail>
+	<lastImage>
+		images/heroes_wallpaper2y_1280.jpg
+	</lastImage>
+	<lastThumbnail>
+		thumbnails/heroes_wallpaper2y_1280.jpg
+	</lastThumbnail>
+
+	<itemWidth>
+		500
+	</itemWidth>
+
+	<itemHeight>
+		400
+	</itemHeight>
+
+	<itemThumbnailImage>
+		thumbnails/heroes_heroes_357109_500_400.jpg
+	</itemThumbnailImage>
+
+	<itemThumbnailWidth>
+		90
+	</itemThumbnailWidth>
+
+	<itemThumbnailHeight>
+		74
+	</itemThumbnailHeight>
+
+	<itemName>
+		heroes_heroes_357109_500_400.jpg
+	</itemName>
+
+	<itemNumber>
+		46
+	</itemNumber>
+
+	<itemOriginalPath>
+		d:\my documents\my pictures\heroes\heroes-heroes-357109_500_400.jpg
+	</itemOriginalPath>
+
+
+	<itemNameOnly>
+		itemNameOnly UNDEFINED (9)
+	</itemNameOnly>
+	
+	<itemCaption>
+		heroes_heroes_357109_500_400.jpg
+	</itemCaption>
+
+	<itemSize>
+		itemSize UNDEFINED (9)
+	</itemSize>
+</image>
+<image>
+	
+	<isFirstImage>
+		false
+	</isFirstImage>
+	
+	<isPrevImage>
+		true
+	</isPrevImage>
+	
+	
+	<isLastImage>
+		true
+	</isLastImage>
+	
+	
+	
+	<isNextImage>
+		false
+	</isNextImage>
+	
+
+
+	<firstImage>
+		images/heroes_nbc_season_2_episode_5_fight_or_flight.jpg
+	</firstImage>
+	<itemLargeImage>
+		images/heroes_wallpaper2y_1280.jpg
+	</itemLargeImage>	
+	<nextImage>
+		
+	</nextImage>
+	<nextThumbnail>
+		
+	</nextThumbnail>
+	<prevImage>
+		heroes_heroes_357109_500_400.jpg
+	</prevImage>
+	<prevThumbnail>
+		heroes_heroes_357109_500_400.jpg
+	</prevThumbnail>
+	<lastImage>
+		images/heroes_wallpaper2y_1280.jpg
+	</lastImage>
+	<lastThumbnail>
+		thumbnails/heroes_wallpaper2y_1280.jpg
+	</lastThumbnail>
+
+	<itemWidth>
+		1024
+	</itemWidth>
+
+	<itemHeight>
+		819
+	</itemHeight>
+
+	<itemThumbnailImage>
+		thumbnails/heroes_wallpaper2y_1280.jpg
+	</itemThumbnailImage>
+
+	<itemThumbnailWidth>
+		90
+	</itemThumbnailWidth>
+
+	<itemThumbnailHeight>
+		74
+	</itemThumbnailHeight>
+
+	<itemName>
+		heroes_wallpaper2y_1280.jpg
+	</itemName>
+
+	<itemNumber>
+		51
+	</itemNumber>
+
+	<itemOriginalPath>
+		d:\my documents\my pictures\heroes\heroes_wallpaper2y_1280.jpg
+	</itemOriginalPath>
+
+
+	<itemNameOnly>
+		itemNameOnly UNDEFINED (9)
+	</itemNameOnly>
+	
+	<itemCaption>
+		heroes_wallpaper2y_1280.jpg
+	</itemCaption>
+
+	<itemSize>
+		itemSize UNDEFINED (9)
+	</itemSize>
+</image>
+</images>
+</album>
