@@ -33,4 +33,8 @@ to extend.</p>
 to the approperate folder in the "~/Picasa"&nbsp; folder to set up
 a gallery.</p>
 <p><strong>Here are 2 examples:</strong></p>]]></page>
+  <page name="~/p/virtual.aspx" instance="0"><![CDATA[<h1>Virtual Page</h1>
+<p>This isn't a page on the file system!&nbsp; Its a virtual page
+created using the URL Rewright library!</p>
+<p>Great for quickly creating a new page.</p>]]></page>
 </pages>

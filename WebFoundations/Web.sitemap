@@ -2,6 +2,7 @@
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
     <siteMapNode url="#" title="root"  description="">
         <siteMapNode url="~/default.aspx" title="Home"  description="Home Page" />
+        <siteMapNode url="~/p/virtual.aspx" title="Virtual"  description="Virtual page" />
         <siteMapNode url="~/gallery.aspx" title="Gallery"  description="Gallery example" />
         <siteMapNode url="~/contact.aspx" title="Contact"  description="Contact Us" />
     </siteMapNode>
