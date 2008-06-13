@@ -46,11 +46,12 @@ Inherits="skin"
     <div id="end_body"></div>
 		<div id="footer">
 		    <span style="float: right; padding-right: 25px;"><asp:HyperLink runat="server" ID="lnkSignin" /></span>
-			&copy; Copyright <a href="mailto:youremail@server.com">Courtenay Probert</a> 2008
+			&copy; Copyright Courtenay Probert 2008
 		</div>
 		
 	<!--// DATASOURCE FOR THE MAIN NAVIGATION MENU SITEMAP //-->
     <asp:SiteMapDataSource ID="smNav" runat="server" ShowStartingNode="false" />
+    
   </form>
   </body>
 </html>
