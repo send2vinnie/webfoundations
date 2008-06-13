@@ -6,8 +6,9 @@
 <p><strong>Thanks</strong></p>]]></page>
   <page name="~/contact.aspx" instance="0"><![CDATA[<h1>Contact Us</h1>]]></page>
   <page name="~/default.aspx" instance="0"><![CDATA[<h1>Web Foundations</h1>
-<div class="introText">If ever I need to build a website in a day I
-checkout these Web Foundations as a starting block.</div>
+<div style="margin-top: 15px;" class="introText">If ever I need to
+build a website in a day I checkout these Web Foundations as a
+starting block.</div>
 <p>These foundations allow me to very quickly build simple sites
 that provide my clients with the ability to click an edit button
 and get write access to the text on their websites. I find it
@@ -29,7 +30,7 @@ to extend.</p>
 &nbsp;</p>]]></page>
   <page name="~/gallery.aspx" instance="0"><![CDATA[<h1>Gallery</h1>
 <p>Simply drop a gallery control on the page and set the reference
-to the approperate folder in the ~/Picasa&nbsp; folder to set up a
-gallery.</p>
-<p>Here are 2 examples:</p>]]></page>
+to the approperate folder in the "~/Picasa"&nbsp; folder to set up
+a gallery.</p>
+<p><strong>Here are 2 examples:</strong></p>]]></page>
 </pages>
