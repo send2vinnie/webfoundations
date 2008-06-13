@@ -29,8 +29,8 @@ public partial class Controls_CMS : System.Web.UI.UserControl
                 return _ScriptName.ToLower();
             else
             {
-                _ScriptName = Request.ServerVariables["SCRIPT_NAME"];
-                _ScriptName = _ScriptName.Replace(_RootDir, "~/").ToLower();
+                _ScriptName = Request.ServerVariables["SCRIPT_NAME"].ToLower();
+                _ScriptName = _ScriptName.Replace(_RootDir.ToLower(), "~/");
                 return _ScriptName;
             }
         }
@@ -43,6 +43,12 @@ public partial class Controls_CMS : System.Web.UI.UserControl
         _RootDir = HttpContext.Current.Request.ApplicationPath;
         if (_RootDir != "/")
             _RootDir += "/";
+
+        string virtualPage = Request.QueryString["p"];
+        if (!String.IsNullOrEmpty(virtualPage))
+            this.ScriptName = String.Format("~/p/{0}.aspx", virtualPage);
+
+        //Response.Write("virtualPage: " + virtualPage);
 
         lblContent.Attributes.Add("style","display: block;");
         lblContent.Text = CMS.GetCachedContent(this.ScriptName, this.Instance, false);  //Set to false b4 going live

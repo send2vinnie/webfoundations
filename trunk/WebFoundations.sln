@@ -4,7 +4,7 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebFoundations", "WebFoundations\", "{BB394150-44F5-464D-9733-DEE55DE594B8}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFramework = "2.0"
-		ProjectReferences = "{31740848-5613-4864-8AEA-473B2483D982}|URLRewriter.dll;"
+		ProjectReferences = "{31740848-5613-4864-8AEA-473B2483D982}|Spring.Web.UrlRewriter.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/WebFoundations"
 		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\Inetpub\WebFoundations\WebFoundations\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\WebFoundations\"
