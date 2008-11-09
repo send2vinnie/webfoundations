@@ -4,7 +4,7 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebFoundations", "WebFoundations\", "{BB394150-44F5-464D-9733-DEE55DE594B8}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFramework = "2.0"
-		ProjectReferences = "{31740848-5613-4864-8AEA-473B2483D982}|Spring.Web.UrlRewriter.dll;"
+		ProjectReferences = ""
 		Debug.AspNetCompiler.VirtualPath = "/WebFoundations"
 		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\Inetpub\WebFoundations\WebFoundations\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\WebFoundations\"
@@ -21,8 +21,6 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebFoundations", "WebFounda
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "1183"
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "URLRewriter", "urlrewriter\src\URLRewriter\URLRewriter.csproj", "{31740848-5613-4864-8AEA-473B2483D982}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,16 +42,6 @@ Global
 		{BB394150-44F5-464D-9733-DEE55DE594B8}.Release|Any CPU.ActiveCfg = Debug|.NET
 		{BB394150-44F5-464D-9733-DEE55DE594B8}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
 		{BB394150-44F5-464D-9733-DEE55DE594B8}.Release|Mixed Platforms.Build.0 = Debug|.NET
-		{31740848-5613-4864-8AEA-473B2483D982}.Debug|.NET.ActiveCfg = Debug|Any CPU
-		{31740848-5613-4864-8AEA-473B2483D982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{31740848-5613-4864-8AEA-473B2483D982}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{31740848-5613-4864-8AEA-473B2483D982}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{31740848-5613-4864-8AEA-473B2483D982}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{31740848-5613-4864-8AEA-473B2483D982}.Release|.NET.ActiveCfg = Release|Any CPU
-		{31740848-5613-4864-8AEA-473B2483D982}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{31740848-5613-4864-8AEA-473B2483D982}.Release|Any CPU.Build.0 = Release|Any CPU
-		{31740848-5613-4864-8AEA-473B2483D982}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{31740848-5613-4864-8AEA-473B2483D982}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
