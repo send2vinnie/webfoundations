@@ -15,11 +15,9 @@ public abstract class BaseMaster : System.Web.UI.MasterPage
     // Set Master Variables
     private string _RootDir = String.Empty;
     private string _ActivePage;
-    private string _JSPageLoad;
+    //private string _JSPageLoad;
     
-
-    protected string _ActiveSection;
-    protected string _ActiveTab;
+    //protected string _ActiveTab;
     protected string _PageTitle;
     protected bool _EnableCMS = true;
 
@@ -51,10 +49,13 @@ public abstract class BaseMaster : System.Web.UI.MasterPage
         _RootDir = HttpContext.Current.Request.ApplicationPath;
         if (_RootDir != "/")
             _RootDir += "/";
+
+        _ActivePage = HttpContext.Current.Request.RawUrl.Replace("?","");
 	}
 
     protected void BaseMater_Init(object sender, EventArgs e)
     {
+
     }
 
     #region "Public Functions"
@@ -110,46 +111,6 @@ public abstract class BaseMaster : System.Web.UI.MasterPage
     #endregion
 
     #region "Navigation Builder"
-    protected string MainPortalNav(string sitemap)
-    {
-        XPathDocument xTabs = new XPathDocument(Server.MapPath(sitemap.Replace("~/", _RootDir)));
-
-        string output = String.Empty;
-
-        if (xTabs != null)
-        {
-            XPathNavigator navTabs = xTabs.CreateNavigator();
-            XPathExpression expr = navTabs.Compile("/s:siteMap/s:siteMapNode/s:siteMapNode");
-            XmlNamespaceManager mngr = new XmlNamespaceManager(new NameTable());
-            mngr.AddNamespace("s", "http://schemas.microsoft.com/AspNet/SiteMap-File-1.0");
-            expr.SetContext(mngr);
-            XPathNodeIterator tabXIter = navTabs.Select(expr); //"/siteMap/siteMapNode/siteMapNode"
-
-            string url;
-            string title;
-            string description;
-            string LinkClass = "navItemInactive";
-
-            while (tabXIter.MoveNext())
-            {
-                url = tabXIter.Current.SelectSingleNode("./@url").Value.ToString().Replace("~/", _RootDir);
-                title = tabXIter.Current.SelectSingleNode("./@title").Value.ToString();
-                description = tabXIter.Current.SelectSingleNode("./@description").Value.ToString();
-
-                if ((_ActivePage == url && _ActiveTab == null) || _ActiveSection == title || _ActiveTab == title)
-                {
-                    LinkClass = "navItemActive";
-
-                    if (_PageTitle == "")
-                        Page.Title = title;
-                }
-
-                output += String.Format("<li><a onfocus=\"if(this.blur)this.blur()\" class=\"{0}\" href=\"{1}\" title=\"{3}\" ><span>{2}</span></a></li>", LinkClass, url, title, description);
-                LinkClass = "navItemInactive"; //reset li class from active
-            }
-        }
-        return String.Format("<div class=\"nav\"><ul class=\"tabNav\">{0}</ul></div>", output);
-    }
 
     protected string DisplaySiteMapLevelAsBulletedList(SiteMapDataSource smdsNavigation) // This is for the left nav
     {
@@ -168,12 +129,12 @@ public abstract class BaseMaster : System.Web.UI.MasterPage
 
         foreach (SiteMapNode node in nodes)
         {
-            if ((_ActivePage == node.Url && _ActiveTab == null) || _ActiveSection == node.Title || _ActiveTab == node.Title)
+            if (_ActivePage == node.Url)
             {
                 LinkClass = "navItemActive";
 
-                if (_PageTitle == "")
-                    Page.Title = node.Title;
+                if (String.IsNullOrEmpty(_PageTitle))
+                    Page.Title = node.Description;
             }
 
             output += String.Format("<li><a onfocus=\"if(this.blur)this.blur()\" class=\"{0}\" href=\"{1}\" ><span>{2}</span></a></li>", LinkClass, node.Url, node.Title);

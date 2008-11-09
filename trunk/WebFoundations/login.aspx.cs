@@ -44,7 +44,7 @@ public partial class _Login : System.Web.UI.Page
     }
     protected void btnSignIn_Click(object sender, EventArgs e)
     {
-        if (txtPassword.Text == "derek275")
+        if (ConfigurationManager.AppSettings["SignInPassword"].ToString() == txtPassword.Text)
         {
             Session["IsAuthenticated"] = true;
             if (!String.IsNullOrEmpty(referer))

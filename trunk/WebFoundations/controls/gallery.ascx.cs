@@ -42,6 +42,7 @@ public partial class Controls_gallery : System.Web.UI.UserControl
         }
 
         Page.Title = String.Format("{0} photo galery", _album);
+
         
         try
         {
