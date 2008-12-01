@@ -6,7 +6,7 @@
 <p><strong>Thanks</strong></p>]]></page>
   <page name="~/contact.aspx" instance="0"><![CDATA[<h1>Contact Us</h1>]]></page>
   <page name="~/default.aspx" instance="0"><![CDATA[<h1>Web Foundations</h1>
-<div style="margin-top: 15px;" class="introText">If ever I need to
+<div class="introText" style="margin-top: 15px;">If ever I need to
 build a website in a day I checkout these Web Foundations as a
 starting block.</div>
 <p>These foundations allow me to very quickly build simple sites
@@ -24,7 +24,9 @@ generated XML. This is included as a control so it's really easy to
 drop on any page.</p>
 <p>It's all build on ASP.Net Master Pages so its familiar and easy
 to extend.</p>
-<p>&nbsp;</p>
+<div class="introText">To try it youeself login with the password
+"<strong>WebFoundations</strong>" (you can change this in the
+web.config)</div>
 <p><strong>Courtenay Probert</strong><br />
 <em>Web Foundations Lead Developer</em><br />
 &nbsp;</p>]]></page>
@@ -33,9 +35,7 @@ to extend.</p>
 to the approperate folder in the "~/Picasa"&nbsp; folder to set up
 a gallery.</p>
 <p><strong>Here are 2 examples:</strong></p>]]></page>
-  <page name="~/p/virtual.aspx" instance="0"><![CDATA[<h1>Virtual Page</h1>
-<p>This isn't a page on the file system!&nbsp; Its a virtual page
-created using the URL Rewright library!</p>
-<p>Great for quickly creating a new page. SSimply drop a new node
-in the web.site map and voila; a new page.</p>]]></page>
+  <page name="~/p/virtual.aspx" instance="0"><![CDATA[
+  <h1>Virtual Page</h1> <p>This isn't a page on the file system!&nbsp; Its a virtual page created using the URL Rewright library!</p> <ul> <li><strong>Q: </strong>How do I add a new virtual page?<br /> <strong>A: </strong>Simply drop a new node in the web.site map and voila; a new page.<br /> &lt;siteMapNode url=&quot;~/p/anyoldname.aspx&quot; title=&quot;New Page&quot; description=&quot;Page title&quot; /&gt;</li> <li><strong>Q: </strong>How do I delete a virtual page<br /> A: Remove to comment the node in your web.sitemap.&nbsp; Note the text will remain in App_Data\Content.xml file (unless you also delte from there)</li> <li>Q: If I change the text in the App_Data\Content.xml file it does not change the text on the page.</li> </ul> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+  ]]></page>
 </pages>
