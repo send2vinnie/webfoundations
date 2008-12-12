@@ -1,4 +1,5 @@
 using System;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -8,6 +9,8 @@ using System.Data;
 using System.Xml;
 using System.Xml.XPath;
 using System.Web.Caching;
+using System.Globalization;
+
 
 /// <summary>
 ///  CMS data recovery
@@ -15,13 +18,14 @@ using System.Web.Caching;
 
 public static class CMS
 {
-    public static string GetCachedContent(string scriptName, int instance, bool killCache)
+    public static string GetCachedContent(string scriptName, int instance, bool killCache, string language)
     {
         string contents;
-        string cacheName = String.Format("{0}:{1}", scriptName, Convert.ToString(instance));
+        string cacheName = String.Format("{0}:{1}:{2}", scriptName, Convert.ToString(instance), language);
 
         try
         {
+            HttpContext.Current.Cache.Remove(cacheName);
             if (killCache)
             {
                 HttpContext.Current.Cache.Remove(cacheName);
@@ -33,10 +37,24 @@ public static class CMS
             }
             else
             {
+
+
+                string currentCulture =string.Empty;
+                if (System.Web.HttpContext.Current.Session["Language"] == null)
+                    currentCulture = LanguageCodeGet(Convert.ToString(System.Web.HttpContext.Current.Request.UserLanguages[0]));
+                else
+                    currentCulture = Convert.ToString(System.Web.HttpContext.Current.Session["Language"]);
+                if (!LanguageExits(currentCulture.ToString()))
+                {
+                    language = System.Configuration.ConfigurationManager.AppSettings["DefaultLanguage"];
+                }
+                if (string.IsNullOrEmpty(language))
+                    language = currentCulture.ToString();
+
                 string db = HttpContext.Current.Server.MapPath("~/App_Data/Content.xml");
                 XPathDocument xpd = new XPathDocument(db);
                 XPathNavigator xpn = xpd.CreateNavigator();
-                XPathNavigator node = xpn.SelectSingleNode(String.Format("/pages/page[@name='{0}' and @instance={1}]", scriptName, instance));
+                XPathNavigator node = xpn.SelectSingleNode(String.Format("/pages/page[@name='{0}' and @instance={1} and @language='{2}']", scriptName, instance, language));
                 if (node != null)
                 {
                     contents = Convert.ToString(node.TypedValue); // node.InnerXml;
@@ -48,7 +66,7 @@ public static class CMS
                 }
             }
         }
-        catch(Exception ex)
+        catch (Exception ex)
         {
             contents = ex.Message;
         }
@@ -56,18 +74,34 @@ public static class CMS
 
         return contents;
     }
+    public static bool LanguageExits(string langaugeValue)
+    {
+        bool exists = false;
+        XPathDocument xpd = new XPathDocument(HttpContext.Current.Server.MapPath("~/App_Data/Languages.xml"));
+        XPathNavigator xpn = xpd.CreateNavigator();
+        XPathNavigator xmlNode = xpn.SelectSingleNode(string.Format("languages/language[@value='{0}']", langaugeValue));
+        if (xmlNode != null)
+            exists = true;
+        return exists;
+    }
+    public static string LanguageCodeGet(string language)
+    {
+        return language.Substring(0, 2);
+    }
 
-    public static bool SetContent(string scriptName, int instance, string newText)
-    { 
+    public static bool SetContent(string scriptName, int instance, string newText, string language)
+    {
         try
         {
-            string cacheName = String.Format("{0}:{1}", scriptName, Convert.ToString(instance));
-            string filename = HttpContext.Current.Server.MapPath("~/App_Data/Content.xml");
+            string cacheName = String.Format("{0}:{1}:{2}", scriptName, Convert.ToString(instance), language);
+            string filename = filename = HttpContext.Current.Server.MapPath("~/App_Data/Content.xml");
             XmlDocument doc = new XmlDocument();
             doc.Load(filename);
-
-            XmlNode contentPage = doc.SelectSingleNode(String.Format("/pages/page[@name='{0}' and @instance={1}]", scriptName, instance));
-            if(contentPage != null)//Edit mode
+            // setting default langauge
+            if (string.IsNullOrEmpty(language))
+                language = "en-GB";
+            XmlNode contentPage = doc.SelectSingleNode(String.Format("/pages/page[@name='{0}' and @instance={1} and @language='{2}']", scriptName, instance, language));
+            if (contentPage != null)//Edit mode
             {
                 contentPage.InnerXml = String.Format("<![CDATA[{0}]]>", newText);
             }
@@ -93,4 +127,10 @@ public static class CMS
             return false;
         }
     }
+
+    
+
+
+
+
 }

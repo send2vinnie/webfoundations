@@ -8,7 +8,6 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
-using ZetaHtmlTidy;
 
 public partial class CMS_Default : BasePage
 {
@@ -79,7 +78,7 @@ public partial class CMS_Default : BasePage
                 _Instance = Convert.ToInt16(Request.QueryString["INSTANCE"]);
 
             if (!String.IsNullOrEmpty(_ScriptName))
-                fckEditContent.Value = Convert.ToString(CMS.GetCachedContent(_ScriptName, _Instance, true));
+                fckEditContent.Value = Convert.ToString(CMS.GetCachedContent(_ScriptName, _Instance, true,Convert.ToString(Session["Language"])));
 
         }
     }
@@ -91,7 +90,7 @@ public partial class CMS_Default : BasePage
         string newText = TidyHTML(fckEditContent.Value);
         //string newText = fckEditContent.Value;
 
-        if (CMS.SetContent(_ScriptName, _Instance, newText))
+        if (CMS.SetContent(_ScriptName, _Instance, newText, Convert.ToString(Session["Language"])))
         {
             lblMsg.Text = newText;
             ClientScript.RegisterStartupScript(this.GetType(), "RefreshParent", "<script language='javascript'>RefreshParent()</script>");
@@ -102,24 +101,6 @@ public partial class CMS_Default : BasePage
 
     private string TidyHTML(string html)
     {
-        if (!String.IsNullOrEmpty(html))
-        {
-            using (HtmlTidy tidy = new HtmlTidy())
-            {
-                try
-                {
-                    string temp = tidy.CleanHtml(html, HtmlTidyOptions.ConvertToXhtml);
-                    return temp.Remove(temp.LastIndexOf("</body>")).Substring(temp.IndexOf("<body>") + 7).Trim();
-                }
-                catch (Exception)
-                {
-                    return String.Empty;
-                }
-            }
-        }
-        else
-        {
-            return String.Empty;
-        }
+        return html;
     }
 }

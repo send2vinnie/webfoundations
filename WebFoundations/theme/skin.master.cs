@@ -11,7 +11,6 @@ using System.Web.UI.HtmlControls;
 
 public partial class skin : BaseMaster
 {
-    
 
     protected void Page_Init(object sender, EventArgs e)
     {
@@ -39,6 +38,7 @@ public partial class skin : BaseMaster
 
         #endregion
 
+
     }
 
     public string navClass(string linkPage)
@@ -48,4 +48,6 @@ public partial class skin : BaseMaster
         else
             return "nav-inactive";
     }
+ 
+  
 }

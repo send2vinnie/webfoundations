@@ -6,6 +6,8 @@ Inherits="skin"
 %>
 <%@ Register Src="~/Controls/CMS.ascx" TagName="CMS" TagPrefix="cms" %>
 
+<%@ Register src="../controls/LanguageSelector.ascx" tagname="LanguageSelector" tagprefix="uc1" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head runat="server">
@@ -20,6 +22,7 @@ Inherits="skin"
   <form id="form1" runat="server">
     <div id="head">
         <div id="title">
+            <uc1:LanguageSelector ID="LanguageSelector1" runat="server" />
 		    Web Foundations
 	    </div>
       <div id="menu">
@@ -46,7 +49,7 @@ Inherits="skin"
     <div id="end_body"></div>
 		<div id="footer">
 		    <span style="float: right; padding-right: 25px;"><asp:HyperLink runat="server" ID="lnkSignin" /></span>
-			&copy; Copyright Courtenay Probert 2008
+			&copy; <asp:Literal ID="litCopyright" runat="server" Text="<%$ Resources:Resource, litCopyright %>"/>
 		</div>
 		
 	<!--// DATASOURCE FOR THE MAIN NAVIGATION MENU SITEMAP //-->

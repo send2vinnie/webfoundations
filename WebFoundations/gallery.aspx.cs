@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 
-public partial class Galery : System.Web.UI.Page
+public partial class Galery : BasePage
 {
     protected void Page_Load(object sender, EventArgs e)
     {

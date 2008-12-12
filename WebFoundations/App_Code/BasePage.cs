@@ -1,6 +1,8 @@
 using System;
 using System.Web.UI;
 using System.Web.UI.HtmlControls;
+using System.Threading;
+using System.Globalization;
 
 /// <summary>
 /// Summary description for BasePage
@@ -19,5 +21,16 @@ public class BasePage : System.Web.UI.Page
 
     protected void BasePage_Init(object sender, EventArgs e)
     {
+    }
+    protected override void InitializeCulture()
+    {
+        if (Session["Language"] != null)
+        {
+            string lang = Session["Language"].ToString();
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(lang);
+            Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(lang);
+        }
+        base.InitializeCulture();
+        
     }
 }
