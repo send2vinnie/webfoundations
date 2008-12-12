@@ -1,41 +1,82 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <pages>
-  <page name="~/login.aspx" instance="0"><![CDATA[<h1>Authorised access only</h1>]]></page>
-  <page name="~/thanks.aspx" instance="0"><![CDATA[<h1>Email sent successfully</h1>
-<p>We will endeavour  to reply as soon as possible.</p>
-<p><strong>Thanks</strong></p>]]></page>
-  <page name="~/contact.aspx" instance="0"><![CDATA[<h1>Contact Us</h1>]]></page>
-  <page name="~/default.aspx" instance="0"><![CDATA[<h1>Web Foundations</h1>
-<div class="introText" style="margin-top: 15px;">If ever I need to
-build a website in a day I checkout these Web Foundations as a
-starting block.</div>
-<p>These foundations allow me to very quickly build simple sites
-that provide my clients with the ability to click an edit button
-and get write access to the text on their websites. I find it
-cleaner and simpler than more comprehensive solutions like
-Macromedia Contribute or DotNetNuke. Its also great for inexpensive
-hosting as there are no Database requirements.</p>
-<p>Its basically an XML Content Management System. It uses the
-Spring URL Rewriting library for search-engine URL's. FCKEditor
-provides the WYSIWYG and a C# port of HTML tidy is employed to
-sanitise users text.</p>
-<p>I've also built a Lightbox Image Gallery that consumes Picasa
-generated XML. This is included as a control so it's really easy to
-drop on any page.</p>
-<p>It's all build on ASP.Net Master Pages so its familiar and easy
-to extend.</p>
-<div class="introText">To try it youeself login with the password
-"<strong>WebFoundations</strong>" (you can change this in the
-web.config)</div>
+  <page name="~/login.aspx" instance="0" language="en"><![CDATA[<h1>Authorised access only</h1>]]></page>
+  <page name="~/login.aspx" instance="0" language="de"><![CDATA[<h1>Nur autorisierter Zugang</h1>]]></page>
+  <page name="~/thanks.aspx" instance="0" language="en"><![CDATA[<h1>Email sent successfully</h1><p>We will endeavour  to reply as soon as possible.</p><p><strong>Thanks</strong></p>]]></page>
+  <page name="~/thanks.aspx" instance="0" language="de">"<![CDATA[<h1>EMail sendete erfolgreich</h1><p>Wir bemühen uns, so bald wie möglich zu antworten.</p><p><strong>Danke.</strong></p>]]></page>
+  <page name="~/contact.aspx" instance="0" language="en"><![CDATA[<h1>Contact Us</h1>]]></page>
+  <page name="~/contact.aspx" instance="0" language="de"><![CDATA[<h1>  Mit uns in Verbindung treten </h1>]]></page>
+  <page name="~/default.aspx" instance="0" language="en"><![CDATA[<h1>Web Foundations</h1>
+  <div class="introText" style="margin-top: 15px;">If ever I need to
+  build a website in a day I checkout these Web Foundations as a
+  starting block.</div>
+  <p>These foundations allow me to very quickly build simple sites
+  that provide my clients with the ability to click an edit button
+  and get write access to the text on their websites. I find it
+  cleaner and simpler than more comprehensive solutions like
+  Macromedia Contribute or DotNetNuke. Its also great for inexpensive
+  hosting as there are no Database requirements.</p>
+  <p>Its basically an XML Content Management System. It uses the
+  Spring URL Rewriting library for search-engine URL's. FCKEditor
+  provides the WYSIWYG and a C# port of HTML tidy is employed to
+  sanitise users text.</p>
+  <p>I've also built a Lightbox Image Gallery that consumes Picasa
+  generated XML. This is included as a control so it's really easy to
+  drop on any page.</p>
+  <p>It's all build on ASP.Net Master Pages so its familiar and easy
+  to extend.</p>
+  <div class="introText">To try it youeself login with the password
+  "<strong>WebFoundations</strong>" (you can change this in the
+  web.config)</div>
+  <p><strong>Courtenay Probert</strong><br />
+  <em>Web Foundations Lead Developer</em><br />
+  &nbsp;</p>]]></page>
+  <page name="~/default.aspx" instance="0" language="de"><![CDATA[<h1>Netz-Grundlagen</h1>
+<div class="introText" style="margin-top: 15px;">Wenn &uuml;berhaupt ich brauche eine Web site in einer Pr&uuml;fung des Tag I diese Netz-Grundlagen als Anfangsblock aufbauen.</div>
+<p>Diese Grundlagen erlauben mir, einfache Aufstellungsorte sehr schnell zu errichten       das bef&auml;higen meine Klienten, einen redigierenknopf anzuklicken und zu erhalten        Schreibzugriff zum Text auf ihren Web site. Ich finde ihn sauberere und einfach als       komplettere L&ouml;sungen wie Macromedia tragen oder DotNetNuke bei. Seine auch gro&szlig;en        f&uuml;r die billige Bewirtung als dort sind keine Datenbankanforderungen.</p>
+<p>Sein im Allgemeinen ein XML zufriedenes Management-System. Es verwendet       Fr&uuml;hling URL Neuschreibenbibliothek f&uuml;r Search Engine URL.        FCKEditor liefert den WYSIWYG und Wechselstrom # der Hafen von HTML sauber wird eingesetzt, um Benutzertext zu sanieren.</p>
+<p>Ich habe auch eine Lightbox Bild-Galerie errichtet, die Picasa verbraucht     erzeugtes XML. Dieses ist eingeschlossen, da eine Steuerung also es wirklich einfach, auf jede m&ouml;gliche Seite zu fallen sind.</p>
+<p>Es ist aller Bau auf ASP.Net Vorlagenseiten so sein vertrautes und einfach zu verl&auml;ngern.</p>
+<div class="introText">Um es zu versuchen melden youeself mit dem Kennwort an     &quot;<strong>Netz-Grundlagen</strong>&quot; (du kannst dieses im web.config &auml;ndern)</div>
 <p><strong>Courtenay Probert</strong><br />
-<em>Web Foundations Lead Developer</em><br />
+<em>Netz-Grundlagen Blei-Entwickler</em><br />
 &nbsp;</p>]]></page>
-  <page name="~/gallery.aspx" instance="0"><![CDATA[<h1>Gallery</h1>
+  <page name="~/gallery.aspx" instance="0" language="en"><![CDATA[<h1>Gallery</h1>
 <p>Simply drop a gallery control on the page and set the reference
 to the approperate folder in the "~/Picasa"&nbsp; folder to set up
 a gallery.</p>
 <p><strong>Here are 2 examples:</strong></p>]]></page>
-  <page name="~/p/virtual.aspx" instance="0"><![CDATA[
+  <page name="~/gallery.aspx" instance="0" language="de"><![CDATA[<h1>Galerie</h1>
+  <p>
+    Eine Galeriesteuerung auf der Seite einfach fallenlassen und den Hinweis einstellen
+    zum approperate Faltblatt im " ~/Picasa" & nbsp; Faltblatt, zum einer Galerie zu gründen.
+  </p>
+  <p>
+    <strong>examples:Sind hier 2 Beispiele: </strong>
+ </p>]]></page>
+  <page name="~/p/virtual.aspx" instance="0" language="en"><![CDATA[
   <h1>Virtual Page</h1> <p>This isn't a page on the file system!&nbsp; Its a virtual page created using the URL Rewright library!</p> <ul> <li><strong>Q: </strong>How do I add a new virtual page?<br /> <strong>A: </strong>Simply drop a new node in the web.site map and voila; a new page.<br /> &lt;siteMapNode url=&quot;~/p/anyoldname.aspx&quot; title=&quot;New Page&quot; description=&quot;Page title&quot; /&gt;</li> <li><strong>Q: </strong>How do I delete a virtual page<br /> A: Remove to comment the node in your web.sitemap.&nbsp; Note the text will remain in App_Data\Content.xml file (unless you also delte from there)</li> <li>Q: If I change the text in the App_Data\Content.xml file it does not change the text on the page.</li> </ul> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
   ]]></page>
+  <page name="~/p/virtual.aspx" instance="0" language="de"><![CDATA[<h1>Virtuelle Seite</h1>
+<p>Dieses ist nicht eine Seite auf dem Dateisystem! &amp; nbsp; Sein eine virtuelle Seite hergestellt using die URL Rewright Bibliothek!</p>
+<ul>
+    <li><strong>Q: </strong>Wie addiere ich eine neue virtuelle Seite?<br />
+    <strong>A: </strong>Einen neuen Nullpunkt im dem web.site Diagramm und voila einfach fallenlassen; eine neue Seite.<br />
+    <siteMapNode url=&quot;~/p/anyoldname.aspx&quot; title=&quot;New Page&quot; description=&quot;Page title&quot; /></li>
+    <li><strong>Q: </strong>How do I delete a virtual page<br />
+    A: Entfernen, um zu kommentieren der Nullpunkt in deinem web.sitemap.&nbsp;Den Text merken bleibt innen App_Data\Content.xml file   (es sei denn du auch delte von dort)</li>
+    <li>Q:   Wenn ich den Text in &auml;ndere  App_Data\Content.xmlAkte &auml;ndert es nicht den Text auf der Seite.</li>
+    <li>Q: Wenn ich den Text in &auml;ndere App_Data\Content.xmlAkte &auml;ndert es nicht den Text auf der Seite.</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>]]></page>
 </pages>

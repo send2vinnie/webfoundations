@@ -4,7 +4,9 @@ MasterPageFile="~/Theme/skin.master"
 AutoEventWireup="true" 
 CodeFile="contact.aspx.cs" 
 Inherits="contact" 
-Title="Contact us" %>
+Title="Contact us" 
+
+%>
 
 <%@ Register Src="Controls/CMS.ascx" TagName="CMS" TagPrefix="cms" %>
 
@@ -63,9 +65,9 @@ Title="Contact us" %>
 	
 	</label><br />
 
-    <label for="body">Message: <br />
+    <asp:Literal ID="litMessage" runat="server" meta:resourceKey="litMessage"/> <br />
     <textarea runat="server" name="body" cols="40" rows="5" id="body" ></textarea>
-	</label>
+	
 	
     <asp:RequiredFieldValidator 
     ID="RequiredFieldValidator3" 
