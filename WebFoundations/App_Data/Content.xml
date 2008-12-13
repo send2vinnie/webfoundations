@@ -45,7 +45,7 @@
 <p>Simply drop a gallery control on the page and set the reference
 to the approperate folder in the "~/Picasa"&nbsp; folder to set up
 a gallery.</p>
-<p><strong>Here are 2 examples:</strong></p>]]></page>
+<p><strong>Heres an example:</strong></p>]]></page>
   <page name="~/gallery.aspx" instance="0" language="de"><![CDATA[<h1>Galerie</h1>
   <p>
     Eine Galeriesteuerung auf der Seite einfach fallenlassen und den Hinweis einstellen

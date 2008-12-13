@@ -4,16 +4,12 @@ MasterPageFile="~/Theme/skin.master"
 AutoEventWireup="true" 
 CodeFile="gallery.aspx.cs" 
 Inherits="Galery" 
-Title="Untitled Page" 
+Title="Galleria example" 
 %>
 <%@ MasterType TypeName="BaseMaster" %>
-<%@ Register Src="Controls/gallery.ascx" TagName="gallery" TagPrefix="pics" %>
-
+<%@ Register src="controls/galleria.ascx" tagname="galleria" tagprefix="uc1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
-    
-    <pics:gallery ID="Gallery1" runat="server" />
-    <pics:gallery ID="Gallery2" runat="server" Album="Heroes" LoadLibrarys="false" />
-
+    <uc1:galleria ID="galleria1" runat="server" Album="Example" />
 </asp:Content>
 
