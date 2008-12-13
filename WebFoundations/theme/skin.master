@@ -21,8 +21,8 @@ Inherits="skin"
   <body>
   <form id="form1" runat="server">
     <div id="head">
+        <span style="float: right; margin: 40px 25px 0 0;"><uc1:LanguageSelector ID="LanguageSelector1" runat="server" /></span>
         <div id="title">
-            <uc1:LanguageSelector ID="LanguageSelector1" runat="server" />
 		    Web Foundations
 	    </div>
       <div id="menu">
