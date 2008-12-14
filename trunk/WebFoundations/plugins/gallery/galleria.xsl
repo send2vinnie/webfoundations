@@ -22,16 +22,16 @@
         <xsl:when test="contains(isFirstImage,'true')">
           <xsl:attribute name="class">active</xsl:attribute>
         </xsl:when>
+		<xsl:otherwise>
+			
+		</xsl:otherwise>
       </xsl:choose>
 		  <xsl:element name="a">
-        <xsl:attribute name="href">Picasa/<xsl:value-of select="$albumName"/>/<xsl:value-of select="itemLargeImage"/></xsl:attribute>
+        <xsl:attribute name="href">/static/picasa/<xsl:value-of select="$albumName"/>/<xsl:value-of select="itemLargeImage"/></xsl:attribute>
 			  <xsl:element name="img">
-        <xsl:attribute name="class">thumb</xsl:attribute>
-				  <xsl:attribute name="border">0</xsl:attribute>
-          <xsl:attribute name="title"><xsl:value-of select="itemCaption"/></xsl:attribute>
-          <xsl:attribute name="rel"><xsl:value-of select="itemCaption"/></xsl:attribute>
-          <xsl:attribute name="alt"><xsl:value-of select="itemCaption"/></xsl:attribute>
-          <xsl:attribute name="src">Picasa/<xsl:value-of select="$albumName"/>/<xsl:value-of select="itemThumbnailImage"/></xsl:attribute>
+		        <xsl:attribute name="title"><xsl:value-of select="itemCaption"/></xsl:attribute>
+		        <xsl:attribute name="alt"><xsl:value-of select="itemCaption"/></xsl:attribute>
+		        <xsl:attribute name="src">/static/picasa/<xsl:value-of select="$albumName"/>/<xsl:value-of select="itemThumbnailImage"/></xsl:attribute>
 			  </xsl:element>
 		  </xsl:element>
     </xsl:element>

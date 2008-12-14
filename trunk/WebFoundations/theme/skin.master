@@ -13,6 +13,10 @@ Inherits="skin"
     <title>
        Antique_Modern
     </title>
+    
+    <style type="text/css" media="screen">
+        @import url('<%=Page.ResolveClientUrl("~/static/css/antique.css")%>');
+    </style>
         
     <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
     <meta name="Robots" content="index,follow" />

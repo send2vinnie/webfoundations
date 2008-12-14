@@ -12,17 +12,17 @@ using System.Xml;
 
 public partial class Controls_gallery : System.Web.UI.UserControl
 {
-    private string _album = "Example";
+    private string _picasaXML;
 
-    public string Album
+    public string PicasaFeed
     {
         get
         {
-            return _album;
+            return _picasaXML;
         }
         set
         {
-            _album = value;
+            _picasaXML = value;
         }
     }
 
@@ -36,20 +36,12 @@ public partial class Controls_gallery : System.Web.UI.UserControl
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Request.QueryString["album"] != null)
-        {
-            _album = Request.QueryString["album"];
-        }
-        
-        Page.Title = String.Format("{0} photo galery", _album);
-
-        
+        if(!String.IsNullOrEmpty(_picasaXML)){
         try
         {
             XmlDocument album = new XmlDocument();
             album.PreserveWhitespace = false;
-            album.Load(Server.MapPath(string.Format("~/Picasa/{0}/index.xml", _album)));
-
+            album.Load(Server.MapPath(_picasaXML));
             xmlGallery.Document = album;
         }
         catch (Exception ex)
@@ -57,7 +49,10 @@ public partial class Controls_gallery : System.Web.UI.UserControl
             lblMSG.Text = ex.Message;
             lblMSG.ForeColor = System.Drawing.Color.Red;
         }
-
+        }else{
+            lblMSG.Text = "Property 'PicasaFeed' is empty";
+            lblMSG.ForeColor = System.Drawing.Color.Red;
+        }
 
     }
 }
