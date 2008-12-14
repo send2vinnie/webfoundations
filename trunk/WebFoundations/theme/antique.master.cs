@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 
-public partial class skin : BaseMaster
+public partial class antique : BaseMaster
 {
 
     protected void Page_Init(object sender, EventArgs e)

@@ -1,6 +1,5 @@
 <%@ Page 
 Language="C#" 
-MasterPageFile="~/Theme/skin.master" 
 AutoEventWireup="true" 
 CodeFile="thanks.aspx.cs" 
 Inherits="thanks" 

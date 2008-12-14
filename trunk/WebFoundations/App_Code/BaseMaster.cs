@@ -124,23 +124,23 @@ public abstract class BaseMaster : System.Web.UI.MasterPage
 
     private string GetSiteMapLevelAsBulletedList(SiteMapNodeCollection nodes)
     {
-        string output = String.Empty;
-        string LinkClass = "navItemInactive";
+        string output = "<ul>";
+        string LinkClass = "inactive";
 
         foreach (SiteMapNode node in nodes)
         {
             if (_ActivePage == node.Url)
             {
-                LinkClass = "navItemActive";
+                LinkClass = "active";
 
                 if (String.IsNullOrEmpty(_PageTitle))
                     Page.Title = node.Description;
             }
 
-            output += String.Format("<li><a onfocus=\"if(this.blur)this.blur()\" class=\"{0}\" href=\"{1}\" ><span>{2}</span></a></li>", LinkClass, node.Url, node.Title);
-            LinkClass = "navItemInactive"; //reset li class from active
+            output += String.Format("<li class=\"{0}\"><a onfocus=\"if(this.blur)this.blur()\" href=\"{1}\" >{2}</a></li>", LinkClass, node.Url, node.Title);
+            LinkClass = "inactive"; //reset li class from active
         }
-        return output;
+        return String.Concat(output,"</ul>");
     }
     #endregion
 }
