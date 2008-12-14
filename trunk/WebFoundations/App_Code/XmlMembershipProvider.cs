@@ -252,7 +252,7 @@ public class XmlMembershipProvider : MembershipProvider
 
     status = MembershipCreateStatus.Success;
     MembershipUser user = new MembershipUser(Name, username, username, email, passwordQuestion, Encrypt(password), isApproved, false, DateTime.Now, DateTime.Now, DateTime.Now, DateTime.Now, DateTime.MaxValue);
-    _Users.Add(username, user);
+    //_Users.Add(username, user); //Causing an error
     return user;
   }
 

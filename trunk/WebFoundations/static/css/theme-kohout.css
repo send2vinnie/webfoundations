@@ -25,16 +25,13 @@ h5 { font-size:100%; }
 
 /* layout ---------------------------------------------------------------------- */
 #layout { 
-
   text-align:left; 
 }
   #container { 
     clear: both;
-
-
   }
   #intro{
-    background: #e6e8e9;height: auto;
+    background: #e6e8e9; height: auto;
   }
   #intro-in{
     width:891px; 
@@ -45,8 +42,6 @@ h5 { font-size:100%; }
   	/* hlavicka ------------------------------------------------------------------ */
   	#header {width:891px; 
       margin:0 auto; }
-  
-      
         
     /* horizontalni navigace --------------------------------------------------- */
       #nav {width:891px; 
@@ -71,9 +66,7 @@ h5 { font-size:100%; }
       	color: #101517;
       	border: 1px solid #fff;border-bottom:1px solid #e6e8e9;
         background:#e6e8e9; text-decoration:none;}
-  
-  
-  
+
     .content {
       padding: 0 0 0 0;
       z-index: 10;
@@ -87,7 +80,7 @@ h5 { font-size:100%; }
     p.intro{
       background: url("../images/line.jpg");
       line-height: 23px;
-      margin:0 0 0;
+      margin:0 0 0 0;
     }
     .shadow{
       border-top: 1px solid #dddddd;
@@ -107,8 +100,6 @@ h5 { font-size:100%; }
     .columns li.col3 p{padding: 0 10px 0 20px;}
     .columns li a.more{display: block;color: #1666a3;padding: 5px 0;}
     .columns li a.more:hover{color: #0b4775; text-decoration: none;}
-
-  
   
   	/* paticka ----------------------------------------------------------------- */
   	#footer {
@@ -122,9 +113,6 @@ h5 { font-size:100%; }
     #footer a{color: #898989;}
     #footer a:hover{color: #666666; text-decoration: none;}
       #footer .f-left, #footer .f-right { padding: 0 10px; }
-
-
-
 
 /* odstavce -------------------------------------------------------------------- */
 p { margin:15px 0; }

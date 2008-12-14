@@ -6,8 +6,8 @@
   <page name="~/thanks.aspx" instance="0" language="de">"<![CDATA[<h1>EMail sendete erfolgreich</h1><p>Wir bemühen uns, so bald wie möglich zu antworten.</p><p><strong>Danke.</strong></p>]]></page>
   <page name="~/contact.aspx" instance="0" language="en"><![CDATA[<h1>Contact Us</h1>]]></page>
   <page name="~/contact.aspx" instance="0" language="de"><![CDATA[<h1>  Mit uns in Verbindung treten </h1>]]></page>
-  <page name="~/default.aspx" instance="0" language="en"><![CDATA[<h1>Web Foundations</h1>
-<div style="margin-top: 15px;" class="introText">If ever I need to   build a website in a day I checkout these Web Foundations as a starting block.</div>]]></page>
+  <page name="~/default.aspx" instance="0" language="en"><![CDATA[<h2>Web Foundations</h2>
+<div class="introText" style="margin-top: 15px;">If ever I need to   build a website in a day I checkout these Web Foundations as a starting block.</div>]]></page>
   <page name="~/default.aspx" instance="0" language="de"><![CDATA[<h1>Netz-Grundlagen</h1>
 <div style="margin-top: 15px;" class="introText">Wenn &uuml;berhaupt ich brauche eine Web site in einer Pr&uuml;fung des Tag I diese Netz-Grundlagen als Anfangsblock aufbauen.</div>
 <p><br />
