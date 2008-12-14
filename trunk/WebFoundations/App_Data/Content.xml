@@ -9,14 +9,8 @@
   <page name="~/default.aspx" instance="0" language="en"><![CDATA[<h1>Web Foundations</h1>
 <div style="margin-top: 15px;" class="introText">If ever I need to   build a website in a day I checkout these Web Foundations as a starting block.</div>]]></page>
   <page name="~/default.aspx" instance="0" language="de"><![CDATA[<h1>Netz-Grundlagen</h1>
-<div class="introText" style="margin-top: 15px;">Wenn &uuml;berhaupt ich brauche eine Web site in einer Pr&uuml;fung des Tag I diese Netz-Grundlagen als Anfangsblock aufbauen.</div>
-<p>Diese Grundlagen erlauben mir, einfache Aufstellungsorte sehr schnell zu errichten       das bef&auml;higen meine Klienten, einen redigierenknopf anzuklicken und zu erhalten        Schreibzugriff zum Text auf ihren Web site. Ich finde ihn sauberere und einfach als       komplettere L&ouml;sungen wie Macromedia tragen oder DotNetNuke bei. Seine auch gro&szlig;en        f&uuml;r die billige Bewirtung als dort sind keine Datenbankanforderungen.</p>
-<p>Sein im Allgemeinen ein XML zufriedenes Management-System. Es verwendet       Fr&uuml;hling URL Neuschreibenbibliothek f&uuml;r Search Engine URL.        FCKEditor liefert den WYSIWYG und Wechselstrom # der Hafen von HTML sauber wird eingesetzt, um Benutzertext zu sanieren.</p>
-<p>Ich habe auch eine Lightbox Bild-Galerie errichtet, die Picasa verbraucht     erzeugtes XML. Dieses ist eingeschlossen, da eine Steuerung also es wirklich einfach, auf jede m&ouml;gliche Seite zu fallen sind.</p>
-<p>Es ist aller Bau auf ASP.Net Vorlagenseiten so sein vertrautes und einfach zu verl&auml;ngern.</p>
-<div class="introText">Um es zu versuchen melden youeself mit dem Kennwort an     &quot;<strong>Netz-Grundlagen</strong>&quot; (du kannst dieses im web.config &auml;ndern)</div>
-<p><strong>Courtenay Probert</strong><br />
-<em>Netz-Grundlagen Blei-Entwickler</em><br />
+<div style="margin-top: 15px;" class="introText">Wenn &uuml;berhaupt ich brauche eine Web site in einer Pr&uuml;fung des Tag I diese Netz-Grundlagen als Anfangsblock aufbauen.</div>
+<p><br />
 &nbsp;</p>]]></page>
   <page name="~/gallery.aspx" instance="0" language="en"><![CDATA[<h1>Gallery</h1>
 <p>Simply drop a gallery control on the page and set the reference to the PicasaFeed=&quot;~/static/picasa/example/index.xml&quot; to set up a gallery.<strong><br />
