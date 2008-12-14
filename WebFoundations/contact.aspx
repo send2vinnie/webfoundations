@@ -1,11 +1,9 @@
 <%@ Page 
 Language="C#" 
-MasterPageFile="~/Theme/skin.master" 
 AutoEventWireup="true" 
 CodeFile="contact.aspx.cs" 
 Inherits="contact" 
 Title="Contact us" 
-
 %>
 
 <%@ Register Src="Controls/CMS.ascx" TagName="CMS" TagPrefix="cms" %>

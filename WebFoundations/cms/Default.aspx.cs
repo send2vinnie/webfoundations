@@ -59,8 +59,8 @@ public partial class CMS_Default : BasePage
             _RootDir += "/";
 
         fckEditContent.BasePath = String.Concat(_RootDir, "FCKeditor/");
-        fckEditContent.CustomConfigurationsPath = "~/Javascript/fckconfig.js".Replace("~/", _RootDir);
-        fckEditContent.EditorAreaCSS = "~/css/edit.css".Replace("~/", _RootDir);
+        fckEditContent.CustomConfigurationsPath = "~/static/javascript/fckconfig.js".Replace("~/", _RootDir);
+        fckEditContent.EditorAreaCSS = "~/static/css/edit.css".Replace("~/", _RootDir);
         fckEditContent.StylesXmlPath = "~/cms/fckstyles.xml".Replace("~/", _RootDir);
         fckEditContent.Height = Unit.Pixel(300);
         fckEditContent.ToolbarSet = "Minimal";

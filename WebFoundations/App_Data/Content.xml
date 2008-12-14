@@ -7,30 +7,7 @@
   <page name="~/contact.aspx" instance="0" language="en"><![CDATA[<h1>Contact Us</h1>]]></page>
   <page name="~/contact.aspx" instance="0" language="de"><![CDATA[<h1>  Mit uns in Verbindung treten </h1>]]></page>
   <page name="~/default.aspx" instance="0" language="en"><![CDATA[<h1>Web Foundations</h1>
-  <div class="introText" style="margin-top: 15px;">If ever I need to
-  build a website in a day I checkout these Web Foundations as a
-  starting block.</div>
-  <p>These foundations allow me to very quickly build simple sites
-  that provide my clients with the ability to click an edit button
-  and get write access to the text on their websites. I find it
-  cleaner and simpler than more comprehensive solutions like
-  Macromedia Contribute or DotNetNuke. Its also great for inexpensive
-  hosting as there are no Database requirements.</p>
-  <p>Its basically an XML Content Management System. It uses the
-  Spring URL Rewriting library for search-engine URL's. FCKEditor
-  provides the WYSIWYG and a C# port of HTML tidy is employed to
-  sanitise users text.</p>
-  <p>I've also built a Lightbox Image Gallery that consumes Picasa
-  generated XML. This is included as a control so it's really easy to
-  drop on any page.</p>
-  <p>It's all build on ASP.Net Master Pages so its familiar and easy
-  to extend.</p>
-  <div class="introText">To try it youeself login with the password
-  "<strong>WebFoundations</strong>" (you can change this in the
-  web.config)</div>
-  <p><strong>Courtenay Probert</strong><br />
-  <em>Web Foundations Lead Developer</em><br />
-  &nbsp;</p>]]></page>
+<div style="margin-top: 15px;" class="introText">If ever I need to   build a website in a day I checkout these Web Foundations as a starting block.</div>]]></page>
   <page name="~/default.aspx" instance="0" language="de"><![CDATA[<h1>Netz-Grundlagen</h1>
 <div class="introText" style="margin-top: 15px;">Wenn &uuml;berhaupt ich brauche eine Web site in einer Pr&uuml;fung des Tag I diese Netz-Grundlagen als Anfangsblock aufbauen.</div>
 <p>Diese Grundlagen erlauben mir, einfache Aufstellungsorte sehr schnell zu errichten       das bef&auml;higen meine Klienten, einen redigierenknopf anzuklicken und zu erhalten        Schreibzugriff zum Text auf ihren Web site. Ich finde ihn sauberere und einfach als       komplettere L&ouml;sungen wie Macromedia tragen oder DotNetNuke bei. Seine auch gro&szlig;en        f&uuml;r die billige Bewirtung als dort sind keine Datenbankanforderungen.</p>
@@ -42,10 +19,8 @@
 <em>Netz-Grundlagen Blei-Entwickler</em><br />
 &nbsp;</p>]]></page>
   <page name="~/gallery.aspx" instance="0" language="en"><![CDATA[<h1>Gallery</h1>
-<p>Simply drop a gallery control on the page and set the reference
-to the approperate folder in the "~/Picasa"&nbsp; folder to set up
-a gallery.</p>
-<p><strong>Heres an example:</strong></p>]]></page>
+<p>Simply drop a gallery control on the page and set the reference to the PicasaFeed=&quot;~/static/picasa/example/index.xml&quot; to set up a gallery.<strong><br />
+</strong></p>]]></page>
   <page name="~/gallery.aspx" instance="0" language="de"><![CDATA[<h1>Galerie</h1>
   <p>
     Eine Galeriesteuerung auf der Seite einfach fallenlassen und den Hinweis einstellen
@@ -54,9 +29,8 @@ a gallery.</p>
   <p>
     <strong>examples:Sind hier 2 Beispiele: </strong>
  </p>]]></page>
-  <page name="~/p/virtual.aspx" instance="0" language="en"><![CDATA[
-  <h1>Virtual Page</h1> <p>This isn't a page on the file system!&nbsp; Its a virtual page created using the URL Rewright library!</p> <ul> <li><strong>Q: </strong>How do I add a new virtual page?<br /> <strong>A: </strong>Simply drop a new node in the web.site map and voila; a new page.<br /> &lt;siteMapNode url=&quot;~/p/anyoldname.aspx&quot; title=&quot;New Page&quot; description=&quot;Page title&quot; /&gt;</li> <li><strong>Q: </strong>How do I delete a virtual page<br /> A: Remove to comment the node in your web.sitemap.&nbsp; Note the text will remain in App_Data\Content.xml file (unless you also delte from there)</li> <li>Q: If I change the text in the App_Data\Content.xml file it does not change the text on the page.</li> </ul> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
-  ]]></page>
+  <page name="~/p/virtual.aspx" instance="0" language="en"><![CDATA[<h1>Virtual Page</h1>
+<p>This isn't a page on the file system!&nbsp; Its a virtual page created using the URL Rewright library!</p>]]></page>
   <page name="~/p/virtual.aspx" instance="0" language="de"><![CDATA[<h1>Virtuelle Seite</h1>
 <p>Dieses ist nicht eine Seite auf dem Dateisystem! &amp; nbsp; Sein eine virtuelle Seite hergestellt using die URL Rewright Bibliothek!</p>
 <ul>
@@ -69,4 +43,12 @@ a gallery.</p>
     <li>Q: Wenn ich den Text in &auml;ndere App_Data\Content.xmlAkte &auml;ndert es nicht den Text auf der Seite.</li>
 </ul>
 <p>&nbsp;</p>]]></page>
+  <page name="~/p/virtual.aspx" instance="1" language="en"><![CDATA[<ul>
+    <li><strong>Q: </strong>How do I add a new virtual page?<br />
+    <strong>A: </strong>Simply drop a new node in the web.site map and voila; a new page.<br />
+    <siteMapNode url=&quot;~/p/anyoldname.aspx&quot; title=&quot;New Page&quot; description=&quot;Page title&quot; /></li>
+    <li><strong>Q: </strong>How do I delete a virtual page<br />
+    A: Remove to comment the node in your web.sitemap.&nbsp; Note the text will remain in App_Data\Content.xml file (unless you also delte from there)</li>
+    <li>Q: If I change the text in the App_Data\Content.xml file it does not change the text on the page.</li>
+</ul>]]></page>
 </pages>

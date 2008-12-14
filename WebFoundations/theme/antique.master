@@ -1,8 +1,8 @@
 <%@ Master 
 Language="C#" 
 AutoEventWireup="true" 
-CodeFile="skin.master.cs" 
-Inherits="skin" 
+CodeFile="antique.master.cs" 
+Inherits="antique" 
 %>
 <%@ Register Src="~/Controls/CMS.ascx" TagName="CMS" TagPrefix="cms" %>
 <%@ Register src="../controls/LanguageSelector.ascx" tagname="LanguageSelector" tagprefix="uc1" %>
@@ -15,7 +15,7 @@ Inherits="skin"
     </title>
     
     <style type="text/css" media="screen">
-        @import url('<%=Page.ResolveClientUrl("~/static/css/antique.css")%>');
+        @import url('<%=Page.ResolveClientUrl("~/static/css/theme-antique.css")%>');
     </style>
         
     <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
