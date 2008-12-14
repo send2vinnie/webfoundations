@@ -27,11 +27,11 @@
 		</xsl:otherwise>
       </xsl:choose>
 		  <xsl:element name="a">
-        <xsl:attribute name="href">/static/picasa/<xsl:value-of select="$albumName"/>/<xsl:value-of select="itemLargeImage"/></xsl:attribute>
+        <xsl:attribute name="href">/WebFoundations/static/picasa/<xsl:value-of select="$albumName"/>/<xsl:value-of select="normalize-space(itemLargeImage)"/></xsl:attribute>
 			  <xsl:element name="img">
-		        <xsl:attribute name="title"><xsl:value-of select="itemCaption"/></xsl:attribute>
-		        <xsl:attribute name="alt"><xsl:value-of select="itemCaption"/></xsl:attribute>
-		        <xsl:attribute name="src">/static/picasa/<xsl:value-of select="$albumName"/>/<xsl:value-of select="itemThumbnailImage"/></xsl:attribute>
+		        <xsl:attribute name="title"><xsl:value-of select="normalize-space(itemCaption)" disable-output-escaping="yes"/></xsl:attribute>
+		        <xsl:attribute name="alt"><xsl:value-of select="normalize-space(itemCaption)"/></xsl:attribute>
+		        <xsl:attribute name="src">/WebFoundations/static/picasa/<xsl:value-of select="$albumName"/>/<xsl:value-of select="normalize-space(itemThumbnailImage)"/></xsl:attribute>
 			  </xsl:element>
 		  </xsl:element>
     </xsl:element>

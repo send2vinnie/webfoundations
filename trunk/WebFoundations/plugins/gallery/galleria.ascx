@@ -12,9 +12,9 @@
     <asp:xml runat="server" id="xmlGallery" TransformSource="galleria.xsl" />
     <div id="main_image"></div>
     
-<%--    <div class="galnav">
+    <div class="galnav">
     <a href="#" onclick="$.galleria.prev(); return false;">&laquo; previous</a> | <a href="#" onclick="$.galleria.next(); return false;">next &raquo;</a>
-    </div>--%>
+    </div>
 
 </div>
 <asp:Label ID="lblMSG" runat="server" />
