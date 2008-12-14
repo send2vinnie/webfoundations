@@ -2,14 +2,14 @@
 
 <asp:PlaceHolder ID="phLibrarys" runat="server">
 
-<link href='<%=Page.ResolveClientUrl("~/css/galleria.css")%>' rel="stylesheet" type="text/css" media="screen"> 
-<script type="text/javascript" src='<%=Page.ResolveClientUrl("~/javascript/jquery-1.2.6.min.js")%>'></script> 
-<script type="text/javascript" src='<%=Page.ResolveClientUrl("~/javascript/jquery.galleria.min.js")%>'></script> 
+<link href='<%=Page.ResolveClientUrl("~/static/css/galleria.css")%>' rel="stylesheet" type="text/css" media="screen"> 
+<script type="text/javascript" src='<%=Page.ResolveClientUrl("~/static/javascript/jquery-1.2.6.min.js")%>'></script> 
+<script type="text/javascript" src='<%=Page.ResolveClientUrl("~/static/javascript/jquery.galleria.min.js")%>'></script> 
 
     
 </asp:PlaceHolder>
 <div class="galwrapper" align="center">
-    <asp:xml runat="server" id="xmlGallery" TransformSource="~/XSL/galleria.xsl" />
+    <asp:xml runat="server" id="xmlGallery" TransformSource="galleria.xsl" />
     <div id="main_image"></div>
     
 <%--    <div class="galnav">
