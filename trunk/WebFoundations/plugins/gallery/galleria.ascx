@@ -9,15 +9,18 @@
     
 </asp:PlaceHolder>
 <div class="galwrapper" align="center">
-    <asp:xml runat="server" id="xmlGallery" TransformSource="galleria.xsl" />
+
+    <asp:xml runat="server" id="xmlGallery" />
     <div id="main_image"></div>
     
     <div class="galnav">
     <a href="#" onclick="$.galleria.prev(); return false;">&laquo; previous</a> | <a href="#" onclick="$.galleria.next(); return false;">next &raquo;</a>
     </div>
+    
+    <asp:Label ID="lblMSG" runat="server" />
 
 </div>
-<asp:Label ID="lblMSG" runat="server" />
+
 
 <script type="text/javascript"> 
 			

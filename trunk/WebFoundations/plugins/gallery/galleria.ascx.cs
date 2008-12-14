@@ -42,7 +42,13 @@ public partial class Controls_gallery : System.Web.UI.UserControl
             XmlDocument album = new XmlDocument();
             album.PreserveWhitespace = false;
             album.Load(Server.MapPath(_picasaXML));
+
+            System.Xml.Xsl.XsltArgumentList xargs = new System.Xml.Xsl.XsltArgumentList();
+            string absPath = Page.ResolveClientUrl(_picasaXML.ToLower().Replace("/index.xml", ""));
+            xargs.AddParam("path", "", absPath);
+            xmlGallery.TransformArgumentList = xargs;
             xmlGallery.Document = album;
+            xmlGallery.TransformSource = "galleria.xsl";
         }
         catch (Exception ex)
         {
