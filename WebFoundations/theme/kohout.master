@@ -75,7 +75,8 @@ Inherits="kohout"
       
       <div id="footer" class="shadow">
         <span style="float: right; padding-right: 25px;"><asp:HyperLink runat="server" ID="lnkSignin" /></span>
-			&copy; <asp:Literal ID="litCopyright" runat="server" Text="<%$ Resources:Resource, litCopyright %>"/>
+		&copy; <asp:Literal ID="litCopyright" runat="server" Text="<%$ Resources:Resource, litCopyright %>"/>
+		&nbsp;-&nbsp;Designed by <a href="http://www.davidkohout.cz">David Kohout</a>
       </div>
     </div>
     <!-- end/ Layout stránek -->
