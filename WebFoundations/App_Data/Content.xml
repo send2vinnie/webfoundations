@@ -25,7 +25,8 @@
  </p>]]></page>
   <page name="~/p/virtual.aspx" instance="0" language="en"><![CDATA[<h1>Virtual Page</h1>
 <p>This isn't a page on the file system!&nbsp; Its a virtual page created using the URL Rewright library!</p>]]></page>
-  <page name="~/p/virtual.aspx" instance="0" language="de"><![CDATA[<h1>Virtuelle Seite</h1>
+  <page name="~/p/virtual.aspx" instance="0" language="de">
+      <![CDATA[<h1>Virtuelle Seite</h1>
 <p>Dieses ist nicht eine Seite auf dem Dateisystem! &amp; nbsp; Sein eine virtuelle Seite hergestellt using die URL Rewright Bibliothek!</p>
 <ul>
     <li><strong>Q: </strong>Wie addiere ich eine neue virtuelle Seite?<br />
@@ -34,15 +35,21 @@
     <li><strong>Q: </strong>How do I delete a virtual page<br />
     A: Entfernen, um zu kommentieren der Nullpunkt in deinem web.sitemap.&nbsp;Den Text merken bleibt innen App_Data\Content.xml file   (es sei denn du auch delte von dort)</li>
     <li>Q:   Wenn ich den Text in &auml;ndere  App_Data\Content.xmlAkte &auml;ndert es nicht den Text auf der Seite.</li>
-    <li>Q: Wenn ich den Text in &auml;ndere App_Data\Content.xmlAkte &auml;ndert es nicht den Text auf der Seite.</li>
+    <li><strong>Q: </strong>Wie addiere ich ein neues lanuaguge?<br />
+    A: Eine neue Sprache in xml Akte unter App_Data/Languages.xml hinzufügen. Neue reource Akte mit dem Sprachennamen contact.aspx.cy.resx z.B. App_GlobalResources und App_LocalResources hinzufügen. Wo CY das neue ist, Einstellung für Waliser Sprache züchten.
+    Für mehr Hilfe und Details vist http://www.asp.net/learn/videos/video-40.aspx </li>
 </ul>
 <p>&nbsp;</p>]]></page>
-  <page name="~/p/virtual.aspx" instance="1" language="en"><![CDATA[<ul>
+  <page name="~/p/virtual.aspx" instance="1" language="en">
+      <![CDATA[<ul>
     <li><strong>Q: </strong>How do I add a new virtual page?<br />
     <strong>A: </strong>Simply drop a new node in the web.site map and voila; a new page.<br />
     <siteMapNode url=&quot;~/p/anyoldname.aspx&quot; title=&quot;New Page&quot; description=&quot;Page title&quot; /></li>
     <li><strong>Q: </strong>How do I delete a virtual page<br />
     A: Remove to comment the node in your web.sitemap.&nbsp; Note the text will remain in App_Data\Content.xml file (unless you also delte from there)</li>
     <li>Q: If I change the text in the App_Data\Content.xml file it does not change the text on the page.</li>
+    <li><strong>Q: </strong>How do I add a new lanuaguge?<br />
+    A: Add a new language into xml file under App_Data/Languages.xml. Add new reource file with the language name e.g contact.aspx.cy.resx to App_GlobalResources and App_LocalResources. Where cy is the new culture setting for welsh language.
+    For more help and details vist http://www.asp.net/learn/videos/video-40.aspx </li>
 </ul>]]></page>
 </pages>
