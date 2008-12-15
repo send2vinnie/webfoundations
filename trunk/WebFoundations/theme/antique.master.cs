@@ -28,7 +28,7 @@ public partial class antique : BaseMaster
         }
         else
         {
-            lnkSignin.Text = "Login";
+            lnkSignin.Text = System.Web.HttpContext.GetGlobalResourceObject("Resource", "Login").ToString();
             lnkSignin.NavigateUrl = "~/login.aspx";
         }
 
