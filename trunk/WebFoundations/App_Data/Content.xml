@@ -39,7 +39,7 @@
     A: Eine neue Sprache in xml Akte unter App_Data/Languages.xml hinzufügen. Neue reource Akte mit dem Sprachennamen contact.aspx.cy.resx z.B. App_GlobalResources und App_LocalResources hinzufügen. Wo CY das neue ist, Einstellung für Waliser Sprache züchten.
     Für mehr Hilfe und Details vist http://www.asp.net/learn/videos/video-40.aspx </li>
 </ul>
-<p>&nbsp;</p>]]></page>
+]]></page>
   <page name="~/p/virtual.aspx" instance="1" language="en">
       <![CDATA[<ul>
     <li><strong>Q: </strong>How do I add a new virtual page?<br />

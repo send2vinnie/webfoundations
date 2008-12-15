@@ -59,6 +59,6 @@ public partial class controls_LanguageSelector : System.Web.UI.UserControl
     {
         Session.Add("Language", ddlLanguage.SelectedValue);
         // redirect to initialize the cuslture thread on BasePage.cs
-        Response.Redirect(Context.Request.Path);
+        Response.Redirect(Context.Request.Url.ToString());
     }
 }
