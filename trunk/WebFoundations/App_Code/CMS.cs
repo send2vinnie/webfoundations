@@ -10,6 +10,7 @@ using System.Xml;
 using System.Xml.XPath;
 using System.Web.Caching;
 using System.Globalization;
+using System.Configuration;
 
 
 /// <summary>
@@ -37,19 +38,8 @@ public static class CMS
             }
             else
             {
-
-
                 string currentCulture =string.Empty;
-                if (System.Web.HttpContext.Current.Session["Language"] == null)
-                    currentCulture = LanguageCodeGet(Convert.ToString(System.Web.HttpContext.Current.Request.UserLanguages[0]));
-                else
-                    currentCulture = Convert.ToString(System.Web.HttpContext.Current.Session["Language"]);
-                if (!LanguageExits(currentCulture.ToString()))
-                {
-                    language = System.Configuration.ConfigurationManager.AppSettings["DefaultLanguage"];
-                }
-                if (string.IsNullOrEmpty(language))
-                    language = currentCulture.ToString();
+                currentCulture = Convert.ToString(System.Web.HttpContext.Current.Session["Language"]);
 
                 string db = HttpContext.Current.Server.MapPath("~/App_Data/Content.xml");
                 XPathDocument xpd = new XPathDocument(db);
@@ -74,6 +64,11 @@ public static class CMS
 
         return contents;
     }
+    /// <summary>
+    /// varify that language exists in  XML file or not
+    /// </summary>
+    /// <param name="langaugeValue">langaugeValue must consisit only first two character e.g en </param>
+    /// <returns></returns>
     public static bool LanguageExits(string langaugeValue)
     {
         bool exists = false;
@@ -84,6 +79,11 @@ public static class CMS
             exists = true;
         return exists;
     }
+    /// <summary>
+    /// Gets the culture from lamguage code
+    /// </summary>
+    /// <param name="language"></param>
+    /// <returns>returns string as culture</returns>
     public static string LanguageCodeGet(string language)
     {
         return language.Substring(0, 2);
@@ -99,7 +99,7 @@ public static class CMS
             doc.Load(filename);
             // setting default langauge
             if (string.IsNullOrEmpty(language))
-                language = "en-GB";
+                language =ConfigurationManager.AppSettings["DefaultLanguage"].ToString();
             XmlNode contentPage = doc.SelectSingleNode(String.Format("/pages/page[@name='{0}' and @instance={1} and @language='{2}']", scriptName, instance, language));
             if (contentPage != null)//Edit mode
             {

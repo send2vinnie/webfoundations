@@ -32,9 +32,9 @@ Title="Contact us"
         <br />
     </asp:PlaceHolder>
     
-    <fieldset><legend>Contact details</legend>
+    <fieldset><legend> <asp:Literal ID="litContactDetails" runat="server" meta:resourceKey="litContactDetails"/></legend>
     
-	<label for="email">E-mail:<br />
+	<label for="email"><asp:Literal ID="litEmail" runat="server" meta:resourceKey="litEmail"/>:<br />
     <input runat="server" name="email" type="text" id="email" size="30" />
         <asp:RequiredFieldValidator 
         ID="RequiredFieldValidator1" 
@@ -46,7 +46,7 @@ Title="Contact us"
         />
     </label><br />
 
-    <label for="name">Your Name <br />
+    <label for="name"><asp:Literal ID="litYourName" runat="server" meta:resourceKey="litYourName"/>: <br />
     <input runat="server" name="name" type="text" id="name" size="30" />
         <asp:RequiredFieldValidator 
         ID="RequiredFieldValidator2" 
@@ -58,7 +58,7 @@ Title="Contact us"
         />
     </label><br />
 
-    <label for="telephone">Telephone: <br />
+    <label for="telephone"><asp:Literal ID="litTelephone" runat="server" meta:resourceKey="litTelephone"/>: <br />
     <input runat="server" name="telephone" type="text" id="telephone" size="30" />
 	
 	</label><br />
@@ -81,7 +81,7 @@ Title="Contact us"
 
   
   <p>
-    <input runat="server" type="submit" name="Submit" value="Submit" id="Submit" onserverclick="Submit_ServerClick" />
+    <input runat="server" type="submit" name="Submit"  id="Submit" onserverclick="Submit_ServerClick" meta:resourceKey="Submit"/>
     <asp:HiddenField runat="server" ID="hdnPrevious" />
 
   </p>
