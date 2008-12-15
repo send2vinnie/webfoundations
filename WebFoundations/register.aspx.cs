@@ -10,4 +10,13 @@ public partial class register : System.Web.UI.Page
     {
 
     }
+
+    protected void btnRegister_Click(object sender, EventArgs e)
+    {
+        if (IsValid)
+        {
+            phRegistration.Visible = false;
+            phRegistrationComplete.Visible = true;
+        }
+    }
 }
