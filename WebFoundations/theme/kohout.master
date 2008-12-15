@@ -28,13 +28,10 @@ Inherits="kohout"
     <div id="layout">
       
       <!-- Hlavička -->
-
       <div id="header">
-        
         <span style="float: right; margin: 5px 5px 0 0;"><uc1:LanguageSelector ID="LanguageSelector1" runat="server" /></span>
         <h1 id="logo"><a href="./" title="WebFoundations">WebFoundations</a></h1>
         <hr class="noscreen" />
-    
       </div>
       <!-- end/ Hlavička -->
       
@@ -49,34 +46,32 @@ Inherits="kohout"
       <!-- end/ Hlavní navigace -->
       
       <div id="container" class="box">
-      
         <!-- Obsah stránek-->
-        
-          
           <div id="intro">
             <div id="intro-in">
-            <p id="intro">
-               <cms:CMS id="cmsDefault" runat="server" />
+            <p class="intro">
+            <asp:ContentPlaceHolder id="TopContent" runat="server">
+                <cms:CMS ID="CMS1" runat="server" Instance="0" />
+            </asp:ContentPlaceHolder>
             </p>
             </div>
           </div>
+          
           <div id="obsah" class="content box">
           <div class="in">
-          
-            <asp:contentplaceholder id="MainContent" runat="server" />
+            <asp:ContentPlaceHolder id="MainContent" runat="server">
+                <cms:CMS ID="CMS2" runat="server" Instance="1" />
+            </asp:ContentPlaceHolder>
             <div class="clear"></div>
-          
           </div>
         </div>
-
         <!-- end/ Obsah stránek-->
-      
       </div>
       
       <div id="footer" class="shadow">
-        <span style="float: right; padding-right: 25px;"><asp:HyperLink runat="server" ID="lnkSignin" /></span>
-		&copy; <asp:Literal ID="litCopyright" runat="server" Text="<%$ Resources:Resource, litCopyright %>"/>
-		&nbsp;-&nbsp;Designed by <a href="http://www.davidkohout.cz">David Kohout</a>
+		<div class="f-left">© <asp:Literal ID="litCopyright" runat="server" Text="<%$ Resources:Resource, litCopyright %>"/>
+		    &nbsp;-&nbsp;Designed by <a href="http://www.davidkohout.cz">David Kohout</a></div>
+		<div class="f-right"><asp:HyperLink runat="server" ID="lnkSignin" /></div>
       </div>
     </div>
     <!-- end/ Layout stránek -->

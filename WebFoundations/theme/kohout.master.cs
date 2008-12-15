@@ -19,7 +19,7 @@ public partial class kohout : BaseMaster
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        cmsDefault.Visible = base._EnableCMS;
+        //cmsDefault.Visible = base._EnableCMS;
 
         if (Convert.ToBoolean(Session["IsAuthenticated"]))
         {

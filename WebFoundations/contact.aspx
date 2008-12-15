@@ -3,12 +3,14 @@ Language="C#"
 AutoEventWireup="true" 
 CodeFile="contact.aspx.cs" 
 Inherits="contact" 
-Title="Contact us" 
-%>
-
+Title="Contact us" %>
 <%@ Register Src="Controls/CMS.ascx" TagName="CMS" TagPrefix="cms" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
+<asp:Content ID="Content1" ContentPlaceHolderID="TopContent" Runat="Server">
+    <cms:CMS ID="CMS1" runat="server" />
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
 
     <cms:CMS id="cmsEmailSuccess" runat="server" instance="2" Visible="false" />
 
@@ -66,7 +68,6 @@ Title="Contact us"
     <asp:Literal ID="litMessage" runat="server" meta:resourceKey="litMessage"/> <br />
     <textarea runat="server" name="body" cols="40" rows="5" id="body" ></textarea>
 	
-	
     <asp:RequiredFieldValidator 
     ID="RequiredFieldValidator3" 
     runat="server" 
@@ -78,8 +79,6 @@ Title="Contact us"
 
   </fieldset>
   
-
-  
   <p>
     <input runat="server" type="submit" name="Submit"  id="Submit" onserverclick="Submit_ServerClick" meta:resourceKey="Submit"/>
     <asp:HiddenField runat="server" ID="hdnPrevious" />
@@ -87,9 +86,6 @@ Title="Contact us"
   </p>
   
   <cms:CMS id="cmsEmailFooter" runat="server" instance="1" />
-    
-
-
 
 </asp:Content>
 

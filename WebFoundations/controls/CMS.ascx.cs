@@ -50,12 +50,10 @@ public partial class Controls_CMS : System.Web.UI.UserControl
 
         //Response.Write("virtualPage: " + virtualPage);
 
-        lblContent.Attributes.Add("style","display: block;");
-        lblContent.Text = CMS.GetCachedContent(this.ScriptName, this.Instance, false, Convert.ToString(Session["Language"]));  //Set to false b4 going live
+        litContent.Text = CMS.GetCachedContent(this.ScriptName, this.Instance, false, Convert.ToString(Session["Language"]));  //Set to false b4 going live
 
         if (Convert.ToBoolean(HttpContext.Current.Session["IsAuthenticated"]))  // Authentication
         {
-            contentArea.Attributes["class"] = "contentArea";
             btnEditContent.Visible = true;
         }
     }
