@@ -117,13 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="litCopyright" xml:space="preserve">
-    <value>Copyright Courtenay Probert 2008 </value>
+  <data name="ContactPage.title" xml:space="preserve">
+    <value>हमसे संपर्क करें</value>
   </data>
-  <data name="Login" xml:space="preserve">
-    <value>Login</value>
+  <data name="GalleryPage.title" xml:space="preserve">
+    <value>गैलरी</value>
   </data>
-  <data name="Logout" xml:space="preserve">
-    <value>logout</value>
+  <data name="HomePage.title" xml:space="preserve">
+    <value>घर</value>
+  </data>
+  <data name="VirtualPage.title" xml:space="preserve">
+    <value>आभासी</value>
   </data>
 </root>

@@ -34,7 +34,7 @@ Title="Contact us" %>
         <br />
     </asp:PlaceHolder>
     
-    <fieldset><legend> <asp:Literal ID="litContactDetails" runat="server" meta:resourceKey="litContactDetails"/></legend>
+    <fieldset><legend> <asp:Literal ID="litContactDetail" runat="server" meta:resourceKey="litContactDetails" Text="3"/></legend>
     
 	<label for="email"><asp:Literal ID="litEmail" runat="server" meta:resourceKey="litEmail"/>:<br />
     <input runat="server" name="email" type="text" id="email" size="30" />

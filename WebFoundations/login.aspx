@@ -8,7 +8,7 @@ Title="Sign-in"
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
     <h1>Sign in</h1>
     <p>
-    <label><asp:Label ID="lblLabel" runat="server" Text="Enter password" /><br />
+    <label><asp:Label ID="lblLabel" runat="server"  meta:resourceKey="lblLabel"/><br />
     <asp:TextBox TextMode="Password" runat="server" ID="txtPassword" />
     </label>
     <asp:Button Text="Sign In" runat="server" ID="btnSignIn" OnClick="btnSignIn_Click" />
