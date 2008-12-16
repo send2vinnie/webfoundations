@@ -23,7 +23,7 @@ public partial class antique : BaseMaster
 
         if (Convert.ToBoolean(Session["IsAuthenticated"]))
         {
-            lnkSignin.Text = "Logout";
+            lnkSignin.Text = System.Web.HttpContext.GetGlobalResourceObject("Resource", "Logout").ToString();
             lnkSignin.NavigateUrl = "~/login.aspx?kill=true";
         }
         else

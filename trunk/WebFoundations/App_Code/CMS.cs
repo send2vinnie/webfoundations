@@ -64,31 +64,7 @@ public static class CMS
 
         return contents;
     }
-    /// <summary>
-    /// varify that language exists in  XML file or not
-    /// </summary>
-    /// <param name="langaugeValue">langaugeValue must consisit only first two character e.g en </param>
-    /// <returns></returns>
-    public static bool LanguageExits(string langaugeValue)
-    {
-        bool exists = false;
-        XPathDocument xpd = new XPathDocument(HttpContext.Current.Server.MapPath("~/App_Data/Languages.xml"));
-        XPathNavigator xpn = xpd.CreateNavigator();
-        XPathNavigator xmlNode = xpn.SelectSingleNode(string.Format("languages/language[@value='{0}']", langaugeValue));
-        if (xmlNode != null)
-            exists = true;
-        return exists;
-    }
-    /// <summary>
-    /// Gets the culture from lamguage code
-    /// </summary>
-    /// <param name="language"></param>
-    /// <returns>returns string as culture</returns>
-    public static string LanguageCodeGet(string language)
-    {
-        return language.Substring(0, 2);
-    }
-
+    
     public static bool SetContent(string scriptName, int instance, string newText, string language)
     {
         try
@@ -110,11 +86,14 @@ public static class CMS
                 XmlNode newPage = doc.CreateNode(XmlNodeType.Element, "page", "");
                 XmlNode attName = doc.CreateAttribute("name");
                 attName.Value = scriptName;
+                XmlNode attLanguage = doc.CreateAttribute("language");
+                attLanguage.Value = language;
                 XmlNode attInstance = doc.CreateAttribute("instance");
                 attInstance.Value = instance.ToString();
                 newPage.InnerXml = String.Format("<![CDATA[{0}]]>", newText);
                 newPage.Attributes.SetNamedItem(attName);
                 newPage.Attributes.SetNamedItem(attInstance);
+                newPage.Attributes.SetNamedItem(attLanguage);
                 doc.DocumentElement.AppendChild(newPage);
             }
             doc.Save(filename);

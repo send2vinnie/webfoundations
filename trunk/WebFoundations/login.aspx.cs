@@ -49,6 +49,7 @@ public partial class _Login : System.Web.UI.Page
             Session["IsAuthenticated"] = true;
             if (!String.IsNullOrEmpty(referer))
             {
+                Session["referer"] = null;
                 Response.Redirect(referer);
             }
             else

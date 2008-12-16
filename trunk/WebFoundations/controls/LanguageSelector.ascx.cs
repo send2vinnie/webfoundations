@@ -30,9 +30,9 @@ public partial class controls_LanguageSelector : System.Web.UI.UserControl
         if (Session["Language"] == null)
         {
             // when loading first time get user language  preference
-            string userLanguage = CMS.LanguageCodeGet(System.Web.HttpContext.Current.Request.UserLanguages[0]);
+            string userLanguage = Language.LanguageCodeGet(System.Web.HttpContext.Current.Request.UserLanguages[0]);
             // if user prefer language doesnot exist select the default language
-            bool exists = CMS.LanguageExits(userLanguage);
+            bool exists = Language.LanguageExits(userLanguage);
             if (!exists)
                 ddlLanguage.SelectedValue = System.Configuration.ConfigurationManager.AppSettings["DefaultLanguage"].ToString();
             else
