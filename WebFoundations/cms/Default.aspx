@@ -33,7 +33,7 @@ ValidateRequest="false"
             
             <fckeditorv2:fckeditor 
             id="fckEditContent" 
-            runat="server" 
+            runat="server"
             />
             
             <p><asp:Label runat="server" ID="lblLastEditor" /></p>
