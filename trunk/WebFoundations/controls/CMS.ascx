@@ -6,12 +6,14 @@ Inherits="Controls_CMS"
 %>
 
 <asp:PlaceHolder runat="server" id="phCMS">
-        <asp:Literal runat="server" ID="litContent" />
+    <div runat="server" id="contentArea">
+        <asp:Label runat="server" ID="lblContent" />
         <asp:Button 
-        runat="server" 
+        runat="server"
         ID="btnEditContent" 
         Visible="false" 
         Text="Edit content" 
         OnClick="butEditContent_Click" 
         />
+    </div><br />
 </asp:PlaceHolder>

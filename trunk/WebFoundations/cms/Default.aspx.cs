@@ -53,22 +53,21 @@ public partial class CMS_Default : BasePage
     {
         if (!Convert.ToBoolean(Session["IsAuthenticated"]))
             Server.Transfer("NotAuthorised.aspx");
-
         _RootDir = HttpContext.Current.Request.ApplicationPath;
         if (_RootDir != "/")
             _RootDir += "/";
 
         fckEditContent.BasePath = String.Concat(_RootDir, "FCKeditor/");
-        fckEditContent.CustomConfigurationsPath = "~/static/javascript/fckconfig.js".Replace("~/", _RootDir);
-        fckEditContent.EditorAreaCSS = "~/static/css/edit.css".Replace("~/", _RootDir);
-        fckEditContent.StylesXmlPath = "~/cms/fckstyles.xml".Replace("~/", _RootDir);
+        //fckEditContent.BasePath = Page.ResolveClientUrl("~/FCKeditor/");
+        fckEditContent.CustomConfigurationsPath = "~/cms/fckconfig.js".Replace("~/", _RootDir);
         fckEditContent.Height = Unit.Pixel(300);
         fckEditContent.ToolbarSet = "Minimal";
-        fckEditContent.ForcePasteAsPlainText = true;
-        fckEditContent.EnableXHTML = true;
-        fckEditContent.FormatOutput = true;
 
-        //lblLastEditor.Text = "~/Javascript/fckconfig.js".Replace("~/", _RootDir);
+        //fckEditContent.EditorAreaCSS = "~/static/css/edit.css".Replace("~/", _RootDir);
+        //fckEditContent.StylesXmlPath = "~/cms/fckstyles.xml".Replace("~/", _RootDir);
+        //fckEditContent.ForcePasteAsPlainText = true;
+        //fckEditContent.EnableXHTML = true;
+        //fckEditContent.FormatOutput = true;
 
         if (!IsPostBack)
         {
@@ -78,7 +77,7 @@ public partial class CMS_Default : BasePage
                 _Instance = Convert.ToInt16(Request.QueryString["INSTANCE"]);
 
             if (!String.IsNullOrEmpty(_ScriptName))
-                fckEditContent.Value = Convert.ToString(CMS.GetCachedContent(_ScriptName, _Instance, true,Convert.ToString(Session["Language"])));
+                fckEditContent.Value = Convert.ToString(CMS.GetCachedContent(_ScriptName, _Instance, Language.LanguageCode, true));
 
         }
     }
@@ -89,8 +88,8 @@ public partial class CMS_Default : BasePage
 
         string newText = TidyHTML(fckEditContent.Value);
         //string newText = fckEditContent.Value;
-
-        if (CMS.SetContent(_ScriptName, _Instance, newText, Convert.ToString(Session["Language"])))
+        //int myLCID = Session.LCID;
+        if (CMS.SetContent(_ScriptName, _Instance, newText, Language.LanguageCode))
         {
             lblMsg.Text = newText;
             ClientScript.RegisterStartupScript(this.GetType(), "RefreshParent", "<script language='javascript'>RefreshParent()</script>");
