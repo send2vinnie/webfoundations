@@ -16,23 +16,12 @@ Just drop on the page and a gallery control = "PicasaFeed ~ / static / Picasa fo
 </strong></p>]]></page>
   <page name="~/gallery.aspx" instance="0" language="de"><![CDATA[<h1>Galerie</h1>
 <p>Eine Galeriesteuerung auf der Seite einfach fallenlassen und den Hinweis einstellen zum approperate Faltblatt im &quot; ~/Picasa&quot; &amp; nbsp; Faltblatt, zum einer Galerie zu gr&uuml;nden.</p>]]></page>
-  <page name="~/p/virtual.aspx" instance="0" language="en"><![CDATA[<h1>Virtual Page</h1>
-<p>This is not a page file on the system! It has a virtual library using the page URL Rewright made!</p>]]></page>
+  <page name="~/p/virtual.aspx" instance="0" language="en"><![CDATA[<h1>Virtual Page</h1> <p>This is not a page file on the system!</p>]]></page>
   <page name="~/p/virtual.aspx" instance="0" language="de"><![CDATA[<h1>Virtuelle Seite</h1>
 <p>Dieses ist nicht eine Seite auf dem Dateisystem! &amp; nbsp; Sein eine virtuelle Seite hergestellt using die URL Rewright Bibliothek!</p>
 ]]></page>
-  <page name="~/p/virtual.aspx" instance="1" language="en"><![CDATA[<ul>
-  <li><strong>Q: </strong>How do I add a new virtual page?<br />
-    <strong>A: </strong>Simply drop a new node in the web.site map and voila; a new page.<br />
-    <sitemapnode description="&quot;Page" title="&quot;New" url="&quot;~/p/anyoldname.aspx&quot;"></sitemapnode></li>
-    <li><strong>Q: </strong>How do I delete a virtual page<br />
-    A: Remove to comment the node in your web.sitemap.&nbsp; Note the text will remain in App_Data\Content.xml file (unless you also delte from there)</li>
-    <li>Q: If I change the text in the App_Data\Content.xml file it does not change the text on the page.</li>
-    <li><strong>Q: </strong>How do I add a new lanuaguge?<br />
-    A: Add a new language into xml file under App_Data/Languages.xml. Add new reource file with the language name e.g contact.aspx.cy.resx to App_GlobalResources and App_LocalResources. Where cy is the new culture setting for welsh language.     For more help and details vist http://www.asp.net/learn/videos/video-40.aspx. Make sure you change the App_Data/Content.xml file for new language</li>
-    <p>&nbsp;</p>]]></page>
-  <page name="~/default.aspx" instance="1" language="en">
-      <![CDATA[<ul class="columns">
+  <page name="~/p/virtual.aspx" instance="1" language="en"><![CDATA[<ul>   <li><strong>Q: </strong>How do I add a new virtual page?<br />     <strong>A: </strong>Simply drop a new node in the web.site map and voila; a new page.<br />     <sitemapnode url="&quot;~/p/anyoldname.aspx&quot;" title="&quot;New" description="&quot;Page"></sitemapnode></li>     <li><strong>Q: </strong>How do I delete a virtual page<br />     A: Remove to comment the node in your web.sitemap.&#160; Note the text will remain in App_Data\Content.xml file (unless you also delte from there)</li>     <li><strong>Q: </strong>How do I add a new lanuaguge?<br />     A: Add a new language into xml file under App_Data/Languages.xml. Add new reource file with the language name e.g contact.aspx.cy.resx to App_GlobalResources and App_LocalResources. Where cy is the new culture setting for welsh language.     For more help and details vist http://www.asp.net/learn/videos/video-40.aspx. Make sure you change the App_Data/Content.xml file for new language</li>          <p>&#160;</p></ul>]]></page>
+  <page name="~/default.aspx" instance="1" language="en"><![CDATA[<ul class="columns">
     <li class="col1">
     <h3>KISS (Keep It Simple Stupid)</h3>
     <p>These ASP.NET Foundations allow me to very quickly build simple content managed site. Web Foundation sites can be hosted on <em>inexpensive hosting</em> as there is <strong>NO Database requirement</strong> (all the data is stored in XML files).</p>
@@ -174,4 +163,6 @@ Just drop on the page and a gallery control = "PicasaFeed ~ / static / Picasa fo
   <page name="~/gallery.aspx" instance="0" language="hi"><![CDATA[<h1>गैलरी</h1>
 <p>बस पृष्ठ पर एक गैलरी नियंत्रण ड्रॉप और = &quot;PicasaFeed ~ / स्थैतिक / Picasa करने के लिए संदर्भ / उदाहरण / index.xml&quot; एक गैलरी स्थापित करने के लिए निर्धारित किया है.<strong><br />
 </strong></p>]]></page>
+  <page name="~/p/virtual2.aspx" instance="1" language="en"><![CDATA[<p>Test</p>]]></page>
+  <page name="~/p/virtual2.aspx" instance="0" language="en"><![CDATA[<p>Test</p>]]></page>
 </pages>
