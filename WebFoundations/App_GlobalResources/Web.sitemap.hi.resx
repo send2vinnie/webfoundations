@@ -129,4 +129,7 @@
   <data name="VirtualPage.title" xml:space="preserve">
     <value>आभासी</value>
   </data>
+  <data name="VirtualPage2.title" xml:space="preserve">
+    <value>आभासी 2</value>
+  </data>
 </root>
