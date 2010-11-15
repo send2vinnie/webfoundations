@@ -1,0 +1,67 @@
+<%@ Master 
+Language="C#" 
+AutoEventWireup="true" 
+CodeFile="antique.master.cs" 
+Inherits="antique" 
+%>
+<%@ Register Src="~/Controls/CMS.ascx" TagName="CMS" TagPrefix="cms" %>
+<%@ Register src="../controls/LanguageSelector.ascx" tagname="LanguageSelector" tagprefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head runat="server">
+    <title>
+       Antique_Modern
+    </title>
+    
+    <style type="text/css" media="screen">
+        @import url('<%=Page.ResolveClientUrl("~/static/css/theme-antique.css")%>');
+    </style>
+        
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+    <meta name="Robots" content="index,follow" />
+	<meta name="author" content="Aaron Ganschow, aaron@unkommon.com" />
+	<meta http-equiv="imagetoolbar" content="false">
+
+
+  </head>
+  <body>
+  <form id="form1" runat="server">
+    <div id="head">
+        <span style="float: right; margin: 40px 25px 0 0;"><uc1:LanguageSelector ID="LanguageSelector1" runat="server" /></span>
+        <div id="title">
+		    Web Foundations
+	    </div>
+      <div id="menu">
+        <asp:Literal 
+        ID="bulletedLeftNav" 
+        runat="server" 
+        />
+      </div>
+    </div>
+    <div id="body_wrapper">
+        <div id="body">
+            <div id="all">
+                <div class="top"></div>
+                <div class="content">
+                    <cms:CMS id="cmsDefault" runat="server" />
+                    <asp:contentplaceholder id="MainContent" runat="server" />
+                </div>
+                <div class="bottom"></div>
+            </div>
+        <div class="clearer"></div>
+        </div>
+    <div class="clearer"></div>
+    </div>
+    <div id="end_body"></div>
+		<div id="footer">
+		    <span style="float: right; padding-right: 25px;"><asp:HyperLink runat="server" ID="lnkSignin" /></span>
+			&copy; <asp:Literal ID="litCopyright" runat="server" Text="<%$ Resources:Resource, litCopyright %>"/>
+		</div>
+		
+	<!--// DATASOURCE FOR THE MAIN NAVIGATION MENU SITEMAP //-->
+    <asp:SiteMapDataSource ID="smNav" runat="server" ShowStartingNode="false" />
+    
+  </form>
+  </body>
+</html>

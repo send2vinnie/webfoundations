@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<pages>
+  <page name="~/login.aspx" instance="0" language="en"><![CDATA[<h1>Authorised access only</h1>]]></page>
+  <page name="~/login.aspx" instance="0" language="de"><![CDATA[<h1>Nur autorisierter Zugang</h1>]]></page>
+  <page name="~/thanks.aspx" instance="0" language="en"><![CDATA[<h1>Email sent successfully</h1><p>We will endeavour  to reply as soon as possible.</p><p><strong>Thanks</strong></p>]]></page>
+  <page name="~/thanks.aspx" instance="0" language="de">"<![CDATA[<h1>EMail sendete erfolgreich</h1><p>Wir bemühen uns, so bald wie möglich zu antworten.</p><p><strong>Danke.</strong></p>]]></page>
+  <page name="~/contact.aspx" instance="0" language="en"><![CDATA[<h1>Contact Us</h1>]]></page>
+  <page name="~/contact.aspx" instance="0" language="de"><![CDATA[<h1>  Mit uns in Verbindung treten </h1>]]></page>
+  <page name="~/default.aspx" instance="0" language="en"><![CDATA[<h2>Web Foundations</h2>
+<div class="introText" style="margin-top: 15px;">If ever I need to   build a website in a day I checkout these Web Foundations as a starting block.</div>]]></page>
+  <page name="~/default.aspx" instance="0" language="de"><![CDATA[<h2>Netz-Grundlagen</h2>
+<div style="margin-top: 15px;" class="introText">Wenn &uuml;berhaupt ich brauche eine Web site in einer Pr&uuml;fung des Tag I diese Netz-Grundlagen als Anfangsblock aufbauen.</div>]]></page>
+  <page name="~/gallery.aspx" instance="0" language="en"><![CDATA[<h1>Gallery</h1>
+<p> 	
+Just drop on the page and a gallery control = "PicasaFeed ~ / static / Picasa for reference / example / index.xml" to establish a gallery set.<strong><br />
+</strong></p>]]></page>
+  <page name="~/gallery.aspx" instance="0" language="de"><![CDATA[<h1>Galerie</h1>
+<p>Eine Galeriesteuerung auf der Seite einfach fallenlassen und den Hinweis einstellen zum approperate Faltblatt im &quot; ~/Picasa&quot; &amp; nbsp; Faltblatt, zum einer Galerie zu gr&uuml;nden.</p>]]></page>
+  <page name="~/p/virtual.aspx" instance="0" language="en"><![CDATA[<h1>Virtual Page</h1> <p>This is not a page file on the system!</p>]]></page>
+  <page name="~/p/virtual.aspx" instance="0" language="de"><![CDATA[<h1>Virtuelle Seite</h1>
+<p>Dieses ist nicht eine Seite auf dem Dateisystem! &amp; nbsp; Sein eine virtuelle Seite hergestellt using die URL Rewright Bibliothek!</p>
+]]></page>
+  <page name="~/p/virtual.aspx" instance="1" language="en"><![CDATA[<ul>   <li><strong>Q: </strong>How do I add a new virtual page?<br />     <strong>A: </strong>Simply drop a new node in the web.site map and voila; a new page.<br />     <sitemapnode url="&quot;~/p/anyoldname.aspx&quot;" title="&quot;New" description="&quot;Page"></sitemapnode></li>     <li><strong>Q: </strong>How do I delete a virtual page<br />     A: Remove to comment the node in your web.sitemap.&#160; Note the text will remain in App_Data\Content.xml file (unless you also delte from there)</li>     <li><strong>Q: </strong>How do I add a new lanuaguge?<br />     A: Add a new language into xml file under App_Data/Languages.xml. Add new reource file with the language name e.g contact.aspx.cy.resx to App_GlobalResources and App_LocalResources. Where cy is the new culture setting for welsh language.     For more help and details vist http://www.asp.net/learn/videos/video-40.aspx. Make sure you change the App_Data/Content.xml file for new language</li>          <p>&#160;</p></ul>]]></page>
+  <page name="~/default.aspx" instance="1" language="en"><![CDATA[<ul class="columns">
+    <li class="col1">
+    <h3>KISS (Keep It Simple Stupid)</h3>
+    <p>These ASP.NET Foundations allow me to very quickly build simple content managed site. Web Foundation sites can be hosted on <em>inexpensive hosting</em> as there is <strong>NO Database requirement</strong> (all the data is stored in XML files).</p>
+    </li>
+    <li class="col2">
+    <h3>Features:</h3>
+    <p>* A WYSIWYG CMS (FCKEditor)<br />
+    * Multi language support (.net globalisation)<br />
+    * A gallery plugin (XML Picasa exports)<br />
+    * Search engine friendly UL's (url rewriting)<br />
+    * Easily themable (ASP.Net Master Pages)</p>
+    </li>
+    <li class="col3">
+    <h3>Enjoy</h3>
+    <p>To try it yourself login with the password &quot;WebFoundations&quot; <br />
+    (you can change this in the web.config)</p>
+    </li>
+</ul>
+ <br style="clear: both;" />
+<p><strong>Courtenay Probert</strong><br />
+<em>Web Foundations Lead Developer</em></p>]]></page>
+  <page name="~/default.aspx" instance="1" language="de"><![CDATA[<ul class="columns">
+      <li class="col1">
+        <h3>KISS (Keep It Simple Stupid)</h3>
+        <p>
+        These ASP.NET Foundations allow me to very quickly build simple content managed site. Web Foundation sites can be hosted on <em>inexpensive hosting</em> as there is <strong>NO Database requirement</strong> (all the data is stored in XML files).       
+        </p>   
+      </li>
+      <li class="col2">
+        <h3>Features:</h3>
+        <p>
+        * Ein WYSIWYG CMS (FCKEditor)<br />
+        * Multi Sprachenunterstützung (.net Globalisierung)<br />
+        * Eine Galerie Einsteck (XML Picasa Exporte)<br/>
+        * Search Engine freundliche ULs (URL Neuschreiben)<br />
+        * Leicht themable (ASP.Net Vorlagenseiten)<br />
+        </p> 
+      </li>
+      <li class="col3">
+        <h3>Genießen</h3>
+        <p>
+        Um es sich zu versuchen mit dem Kennwort " anmelden; WebFoundations" < br/> (du kannst dieses im web.config ändern)
+        </p> 
+      </li>
+    </ul>
+    
+    <br style="clear: both;" />
+   <p><strong>Courtenay Probert</strong><br /><em>Web Foundations Blei-Entwickler</em><br /></p>]]></page>
+  <page name="~/default.aspx" instance="1" language="es"><![CDATA[<ul class="columns">
+    <li class="col1">
+    <h3>BESO (subsistencia &eacute;l est&uacute;pidos simples)</h3>
+    <p>Estas fundaciones de ASP.NET permiten que construya muy r&aacute;pidamente el sitio manejado contenido simple. Los sitios de la fundaci&oacute;n del Web se pueden recibir en el recibimiento barato pues no hay requisito de la base de datos (todos los datos se almacenan en archivos de XML).</p>
+    </li>
+    <li class="col2">
+    <h3>Caracter&iacute;sticas:</h3>
+    <p>* Un CMS del WYSIWYG (FCKEditor)<br />
+    * Ayuda multi de la lengua (globalizaci&oacute;n) de .net <br />
+    * una galer&iacute;a enchufable (exportaciones de XML Picasa) <br />
+    * UL amistosas del Search Engine (reescritura del URL)<br />
+    * f&aacute;cilmente themable (p&aacute;ginas principales de ASP.Net)</p>
+    </li>
+    <li class="col3">
+    <h3>Gozar</h3>
+    <p>Para intentarlo t&uacute; mismo abrirte una sesi&oacute;n con el &quot; de la contrase&ntilde;a; WebFoundations&quot;<br />
+    (puedes cambiar esto en el web.config)</p>
+    </li>
+</ul>
+  <br style="clear: both;" />
+<p><strong>Courtenay Probert</strong><br />
+<em>Web Foundations Revelador del plomo</em></p>]]></page>
+  <page name="~/default.aspx" instance="0" language="es"><![CDATA[<h2>Web Foundations</h2>
+<div style="margin-top: 15px;" class="introText">Si necesito nunca construir un Web site en una comprobación del día I estas fundaciones del Web como bloque el comenzar.</div>]]></page>
+  <page name="~/p/virtual.aspx" instance="0" language="es"><![CDATA[<h1>Página virtual</h1>
+<p>¡Esto no es una página en el sistema de ficheros! & nbsp; ¡Su una página virtual creada usar la biblioteca del URL Rewright!</p>]]></page>
+  <page name="~/p/virtual.aspx" instance="1" language="es"><![CDATA[<ul>
+    <li><strong>Q: </strong>&iquest;C&oacute;mo agrego una nueva p&aacute;gina virtual?<br />
+    A: Caer simplemente un nuevo nodo en el mapa y el voila de web.site; una nueva p&aacute;gina.<br />
+    <sitemapnode url="&quot;~/p/anyoldname.aspx&quot;" title="&quot;New" description="&quot;Page"></sitemapnode></li>
+    <li>Q: C&oacute;mo lo hago suprimir un virtual paginan<br />
+    A: Quitar para comentar el nodo en tu web.sitemap. Observar el texto permanecer&aacute; en el archivo de App_Data \ Content.xml (a menos que t&uacute; tambi&eacute;n el delte de all&iacute;)</li>
+    <li>Q: Si cambio el texto en el archivo de App_Data \ Content.xml no cambia el texto en la p&aacute;gina.</li>
+    <li>Q: &iquest;C&oacute;mo agrego un nuevo lanuaguge?<br />
+    A: Agregar una nueva lengua en archivo del xml debajo de App_Data/Languages.xml. Agregar el nuevo  archivo del reource con el nombre e.g contact.aspx.cy.resx de la lengua a App_GlobalResources y a App_LocalResources. Donde est&aacute; la nueva CY cultivar el ajuste para la lengua gal&eacute;s. Para m&aacute;s ayuda y vist http://www.asp.net/learn/videos/video-40.aspx de los detalles. Cerciorarte de te  cambio el archivo de App_Data/Content.xml para la nueva lengua.</li>
+</ul>
+<p>&nbsp;</p>]]></page>
+  <page name="~/p/virtual.aspx" instance="1" language="de"><![CDATA[<ul>
+    <li><strong>Q: </strong>Wie addiere ich eine neue virtuelle Seite?<br />
+    <strong>A: </strong>Einen neuen Nullpunkt im dem web.site Diagramm und voila einfach fallenlassen; eine neue Seite.<br />
+    <sitemapnode url="&quot;~/p/anyoldname.aspx&quot;" title="&quot;New" description="&quot;Page"></sitemapnode></li>
+    <li><strong>Q: </strong>How do I delete a virtual page<br />
+    A: Entfernen, um zu kommentieren der Nullpunkt in deinem web.sitemap.&nbsp;Den Text merken bleibt innen App_Data\Content.xml file   (es sei denn du auch delte von dort)</li>
+    <li>Q:   Wenn ich den Text in &auml;ndere  App_Data\Content.xmlAkte &auml;ndert es nicht den Text auf der Seite.</li>
+    <li><strong>Q: </strong>Wie addiere ich ein neues lanuaguge?<br />
+    A: Eine neue Sprache in xml Akte unter App_Data/Languages.xml hinzuf&uuml;gen. Neue reource Akte mit dem Sprachennamen contact.aspx.cy.resx z.B. App_GlobalResources und App_LocalResources hinzuf&uuml;gen. Wo CY das neue ist, Einstellung f&uuml;r Waliser Sprache z&uuml;chten.     F&uuml;r mehr Hilfe und Details vist http://www.asp.net/learn/videos/video-40.aspx</li>
+</ul>]]></page>
+  <page name="~/contact.aspx" instance="0" language="es"><![CDATA[<h1>Entrarnos en contacto con</h1>]]></page>
+  <page name="~/gallery.aspx" instance="0" language="es"><![CDATA[<h1>Galería</h1>
+<p>Caer simplemente un control de la galería en la página y fijar la referencia al PicasaFeed=&quot;~/static/picasa/example/index.xml&quot; para setup una galería.<strong><br />
+</strong></p>]]></page>
+  <page name="~/default.aspx" instance="0" language="hi"><![CDATA[<h2>वेब नींव</h2>
+<div class="introText" style="margin-top: 15px;">कभी अगर मैं एक दिन में एक शुरुआत ब्लॉक के रूप में मैं Checkout इन वेब नींव एक वेबसाइट का निर्माण करने की आवश्यकता है.</div>]]></page>
+  <page name="~/default.aspx" instance="1" language="hi"><![CDATA[<ul class="columns">
+    <li class="col1">
+    <h3>चुंबन (यह सरल बेवकूफ) रखें</h3>
+    <p>इन ASP.NET नींव मुझे बहुत जल्दी सरल सामग्री का निर्माण करने की अनुमति साइट प्रबंधित. वेब फाउंडेशन स्थलों के रूप में कोई डाटाबेस आवश्यकता (सभी डेटा को XML फ़ाइलों में) संग्रहित है सस्ता होस्ट पर होस्ट किया जा सकता है.</p>
+    </li>
+    <li class="col2">
+    <h3>विशेषताएं:</h3>
+    <p>* एक WYSIWYG CMS (FCKEditor)<br />
+    * बहु भाषा समर्थन (. शुद्ध वैश्वीकरण)<br />
+    * A गैलरी प्लगइन (XML पिकासा निर्यात)<br />
+    * खोज इंजन दोस्ताना उल है (नए सिरे से लिखना) url<br />
+    * आसानी से themable (ASP.Net मास्टर Pages)</p>
+    </li>
+    <li class="col3">
+    <h3>आनंद लेना</h3>
+    <p>अपने आप को कूटशब्द &quot;WebFoundations के साथ&quot; लॉगिन इसे आजमाने के लिए<br />
+    (क्या आप web.config में) इस परिवर्तन कर सकते हैं</p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>Courtenay Probert</strong><br />
+<em>Web Foundations सीसा डेवलपर</em></p>]]></page>
+  <page name="~/login.aspx" instance="0" language="hi"><![CDATA[	
+<h2>अधिकृत का उपयोग केवल</h2>]]></page>
+  <page name="~/login.aspx" instance="0" language="es"><![CDATA[<h2>El acceso autorizado únicamente</h2>]]></page>
+  <page name="~/p/virtual.aspx" instance="1" language="hi"><![CDATA[<ul>
+    <li>क्यू: क्या मैं एक नए आभासी पृष्ठ जोड़ने कैसे करते हैं?<br />
+    एक: बस web.site नक्शे और देखा में एक नया नोड ड्रॉप; एक नया पृष्ठ.<br />
+    <sitemapnode description="&quot;Page" title="&quot;New" url="&quot;~/p/anyoldname.aspx&quot;"></sitemapnode></li>
+    <li>क्यू: मैं कैसे एक आभासी पृष्ठ को हटाने की क्या विधि है<br />
+    एक: अपने web.sitemap में नोड टिप्पणी करने के लिए निकालें. मूल पाठ इस प्रकार ध्यान दें App_Data में रहेगी \ Content.xml फ़ाइल (जब तक आप भी वहाँ से) delte</li>
+    <li>क्यू: यदि मैं इसे इस पृष्ठ पर पाठ को बदल नहीं है फ़ाइल को App_Data \ Content.xml में मूल पाठ इस प्रकार बदलते हैं.</li>
+    <li>क्यू: क्या मैं एक नए lanuaguge जोड़ने कैसे करते हैं?<br />
+    एक: App_Data के अंतर्गत xml फ़ाइल में एक नई भाषा जोड़ें / Languages.xml. भाषा का नाम App_GlobalResources और App_LocalResources करने के लिए contact.aspx.cy.resx उदा के साथ नए reource फ़ाइल जोड़ें. कहाँ cy नए संस्कृति वेल्श भाषा के लिए सेटिंग है. और अधिक मदद और विवरण vist http://www.asp.net/learn/videos/video-40.aspx के लिए. कर आप App_Data / Content.xml नई भाषा के लिए फ़ाइल को बदल यकीन है कि</li>
+</ul>]]></page>
+  <page name="~/p/virtual.aspx" instance="0" language="hi"><![CDATA[<h1>आभासी Page</h1>
+<p>इस फ़ाइल सिस्टम पर एक पृष्ठ नहीं है! इसका एक आभासी पृष्ठ यूआरएल Rewright पुस्तकालय का उपयोग करके बनाया!</p>]]></page>
+  <page name="~/gallery.aspx" instance="0" language="hi"><![CDATA[<h1>गैलरी</h1>
+<p>बस पृष्ठ पर एक गैलरी नियंत्रण ड्रॉप और = &quot;PicasaFeed ~ / स्थैतिक / Picasa करने के लिए संदर्भ / उदाहरण / index.xml&quot; एक गैलरी स्थापित करने के लिए निर्धारित किया है.<strong><br />
+</strong></p>]]></page>
+  <page name="~/p/virtual2.aspx" instance="1" language="en"><![CDATA[<p>Test</p>]]></page>
+  <page name="~/p/virtual2.aspx" instance="0" language="en"><![CDATA[<p>Test</p>]]></page>
+</pages>

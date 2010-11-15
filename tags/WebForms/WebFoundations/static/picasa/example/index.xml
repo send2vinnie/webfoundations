@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<album>
+<albumName>Example</albumName>
+<albumItemCount>7</albumItemCount>
+<albumCaption>A day of mountain boarding</albumCaption>
+<images>
+<image>
+	<isFirstImage>
+		true
+	</isFirstImage>
+	
+	
+	
+	<isPrevImage>
+		false
+	</isPrevImage>
+	<prevImage />
+	
+	
+	<isLastImage>
+		false
+	</isLastImage>
+	
+	<isNextImage>
+		true
+	</isNextImage>
+	
+	
+
+
+	<firstImage>
+		images/dsc_0004.jpg
+	</firstImage>
+	<itemLargeImage>
+		images/dsc_0004.jpg
+	</itemLargeImage>	
+	<nextImage>
+		dsc_0050.jpg
+	</nextImage>
+	<nextThumbnail>
+		dsc_0050.jpg
+	</nextThumbnail>
+	<prevImage>
+		
+	</prevImage>
+	<prevThumbnail>
+		
+	</prevThumbnail>
+	<lastImage>
+		images/dsc_0149.jpg
+	</lastImage>
+	<lastThumbnail>
+		thumbnails/dsc_0149.jpg
+	</lastThumbnail>
+
+	<itemWidth>
+		425
+	</itemWidth>
+
+	<itemHeight>
+		640
+	</itemHeight>
+
+	<itemThumbnailImage>
+		thumbnails/dsc_0004.jpg
+	</itemThumbnailImage>
+
+	<itemThumbnailWidth>
+		63
+	</itemThumbnailWidth>
+
+	<itemThumbnailHeight>
+		90
+	</itemThumbnailHeight>
+
+	<itemName>
+		dsc_0004.jpg
+	</itemName>
+
+	<itemNumber>
+		6731
+	</itemNumber>
+
+	<itemOriginalPath>
+		d:\pictures\photos\2008 - 12\dsc_0004.jpg
+	</itemOriginalPath>
+
+
+	<itemNameOnly>
+		itemNameOnly UNDEFINED (9)
+	</itemNameOnly>
+	
+	<itemCaption>
+		dsc_0004.jpg
+	</itemCaption>
+
+	<itemSize>
+		itemSize UNDEFINED (9)
+	</itemSize>
+</image>
+<image>
+	
+	<isFirstImage>
+		false
+	</isFirstImage>
+	
+	<isPrevImage>
+		true
+	</isPrevImage>
+	
+	
+	
+	<isLastImage>
+		false
+	</isLastImage>
+	
+	<isNextImage>
+		true
+	</isNextImage>
+	
+	
+
+
+	<firstImage>
+		images/dsc_0004.jpg
+	</firstImage>
+	<itemLargeImage>
+		images/dsc_0050.jpg
+	</itemLargeImage>	
+	<nextImage>
+		dsc_0067.jpg
+	</nextImage>
+	<nextThumbnail>
+		dsc_0067.jpg
+	</nextThumbnail>
+	<prevImage>
+		dsc_0004.jpg
+	</prevImage>
+	<prevThumbnail>
+		dsc_0004.jpg
+	</prevThumbnail>
+	<lastImage>
+		images/dsc_0149.jpg
+	</lastImage>
+	<lastThumbnail>
+		thumbnails/dsc_0149.jpg
+	</lastThumbnail>
+
+	<itemWidth>
+		425
+	</itemWidth>
+
+	<itemHeight>
+		640
+	</itemHeight>
+
+	<itemThumbnailImage>
+		thumbnails/dsc_0050.jpg
+	</itemThumbnailImage>
+
+	<itemThumbnailWidth>
+		63
+	</itemThumbnailWidth>
+
+	<itemThumbnailHeight>
+		90
+	</itemThumbnailHeight>
+
+	<itemName>
+		dsc_0050.jpg
+	</itemName>
+
+	<itemNumber>
+		6777
+	</itemNumber>
+
+	<itemOriginalPath>
+		d:\pictures\photos\2008 - 12\dsc_0050.jpg
+	</itemOriginalPath>
+
+
+	<itemNameOnly>
+		itemNameOnly UNDEFINED (9)
+	</itemNameOnly>
+	
+	<itemCaption>
+		dsc_0050.jpg
+	</itemCaption>
+
+	<itemSize>
+		itemSize UNDEFINED (9)
+	</itemSize>
+</image>
+<image>
+	
+	<isFirstImage>
+		false
+	</isFirstImage>
+	
+	<isPrevImage>
+		true
+	</isPrevImage>
+	
+	
+	
+	<isLastImage>
+		false
+	</isLastImage>
+	
+	<isNextImage>
+		true
+	</isNextImage>
+	
+	
+
+
+	<firstImage>
+		images/dsc_0004.jpg
+	</firstImage>
+	<itemLargeImage>
+		images/dsc_0067.jpg
+	</itemLargeImage>	
+	<nextImage>
+		dsc_0076.jpg
+	</nextImage>
+	<nextThumbnail>
+		dsc_0076.jpg
+	</nextThumbnail>
+	<prevImage>
+		dsc_0050.jpg
+	</prevImage>
+	<prevThumbnail>
+		dsc_0050.jpg
+	</prevThumbnail>
+	<lastImage>
+		images/dsc_0149.jpg
+	</lastImage>
+	<lastThumbnail>
+		thumbnails/dsc_0149.jpg
+	</lastThumbnail>
+
+	<itemWidth>
+		425
+	</itemWidth>
+
+	<itemHeight>
+		640
+	</itemHeight>
+
+	<itemThumbnailImage>
+		thumbnails/dsc_0067.jpg
+	</itemThumbnailImage>
+
+	<itemThumbnailWidth>
+		63
+	</itemThumbnailWidth>
+
+	<itemThumbnailHeight>
+		90
+	</itemThumbnailHeight>
+
+	<itemName>
+		dsc_0067.jpg
+	</itemName>
+
+	<itemNumber>
+		6794
+	</itemNumber>
+
+	<itemOriginalPath>
+		d:\pictures\photos\2008 - 12\dsc_0067.jpg
+	</itemOriginalPath>
+
+
+	<itemNameOnly>
+		itemNameOnly UNDEFINED (9)
+	</itemNameOnly>
+	
+	<itemCaption>
+		dsc_0067.jpg
+	</itemCaption>
+
+	<itemSize>
+		itemSize UNDEFINED (9)
+	</itemSize>
+</image>
+<image>
+	
+	<isFirstImage>
+		false
+	</isFirstImage>
+	
+	<isPrevImage>
+		true
+	</isPrevImage>
+	
+	
+	
+	<isLastImage>
+		false
+	</isLastImage>
+	
+	<isNextImage>
+		true
+	</isNextImage>
+	
+	
+
+
+	<firstImage>
+		images/dsc_0004.jpg
+	</firstImage>
+	<itemLargeImage>
+		images/dsc_0076.jpg
+	</itemLargeImage>	
+	<nextImage>
+		dsc_0088.jpg
+	</nextImage>
+	<nextThumbnail>
+		dsc_0088.jpg
+	</nextThumbnail>
+	<prevImage>
+		dsc_0067.jpg
+	</prevImage>
+	<prevThumbnail>
+		dsc_0067.jpg
+	</prevThumbnail>
+	<lastImage>
+		images/dsc_0149.jpg
+	</lastImage>
+	<lastThumbnail>
+		thumbnails/dsc_0149.jpg
+	</lastThumbnail>
+
+	<itemWidth>
+		425
+	</itemWidth>
+
+	<itemHeight>
+		640
+	</itemHeight>
+
+	<itemThumbnailImage>
+		thumbnails/dsc_0076.jpg
+	</itemThumbnailImage>
+
+	<itemThumbnailWidth>
+		63
+	</itemThumbnailWidth>
+
+	<itemThumbnailHeight>
+		90
+	</itemThumbnailHeight>
+
+	<itemName>
+		dsc_0076.jpg
+	</itemName>
+
+	<itemNumber>
+		6803
+	</itemNumber>
+
+	<itemOriginalPath>
+		d:\pictures\photos\2008 - 12\dsc_0076.jpg
+	</itemOriginalPath>
+
+
+	<itemNameOnly>
+		itemNameOnly UNDEFINED (9)
+	</itemNameOnly>
+	
+	<itemCaption>
+		dsc_0076.jpg
+	</itemCaption>
+
+	<itemSize>
+		itemSize UNDEFINED (9)
+	</itemSize>
+</image>
+<image>
+	
+	<isFirstImage>
+		false
+	</isFirstImage>
+	
+	<isPrevImage>
+		true
+	</isPrevImage>
+	
+	
+	
+	<isLastImage>
+		false
+	</isLastImage>
+	
+	<isNextImage>
+		true
+	</isNextImage>
+	
+	
+
+
+	<firstImage>
+		images/dsc_0004.jpg
+	</firstImage>
+	<itemLargeImage>
+		images/dsc_0088.jpg
+	</itemLargeImage>	
+	<nextImage>
+		dsc_0141.jpg
+	</nextImage>
+	<nextThumbnail>
+		dsc_0141.jpg
+	</nextThumbnail>
+	<prevImage>
+		dsc_0076.jpg
+	</prevImage>
+	<prevThumbnail>
+		dsc_0076.jpg
+	</prevThumbnail>
+	<lastImage>
+		images/dsc_0149.jpg
+	</lastImage>
+	<lastThumbnail>
+		thumbnails/dsc_0149.jpg
+	</lastThumbnail>
+
+	<itemWidth>
+		425
+	</itemWidth>
+
+	<itemHeight>
+		640
+	</itemHeight>
+
+	<itemThumbnailImage>
+		thumbnails/dsc_0088.jpg
+	</itemThumbnailImage>
+
+	<itemThumbnailWidth>
+		63
+	</itemThumbnailWidth>
+
+	<itemThumbnailHeight>
+		90
+	</itemThumbnailHeight>
+
+	<itemName>
+		dsc_0088.jpg
+	</itemName>
+
+	<itemNumber>
+		6815
+	</itemNumber>
+
+	<itemOriginalPath>
+		d:\pictures\photos\2008 - 12\dsc_0088.jpg
+	</itemOriginalPath>
+
+
+	<itemNameOnly>
+		itemNameOnly UNDEFINED (9)
+	</itemNameOnly>
+	
+	<itemCaption>
+		dsc_0088.jpg
+	</itemCaption>
+
+	<itemSize>
+		itemSize UNDEFINED (9)
+	</itemSize>
+</image>
+<image>
+	
+	<isFirstImage>
+		false
+	</isFirstImage>
+	
+	<isPrevImage>
+		true
+	</isPrevImage>
+	
+	
+	
+	<isLastImage>
+		false
+	</isLastImage>
+	
+	<isNextImage>
+		true
+	</isNextImage>
+	
+	
+
+
+	<firstImage>
+		images/dsc_0004.jpg
+	</firstImage>
+	<itemLargeImage>
+		images/dsc_0141.jpg
+	</itemLargeImage>	
+	<nextImage>
+		dsc_0149.jpg
+	</nextImage>
+	<nextThumbnail>
+		dsc_0149.jpg
+	</nextThumbnail>
+	<prevImage>
+		dsc_0088.jpg
+	</prevImage>
+	<prevThumbnail>
+		dsc_0088.jpg
+	</prevThumbnail>
+	<lastImage>
+		images/dsc_0149.jpg
+	</lastImage>
+	<lastThumbnail>
+		thumbnails/dsc_0149.jpg
+	</lastThumbnail>
+
+	<itemWidth>
+		425
+	</itemWidth>
+
+	<itemHeight>
+		640
+	</itemHeight>
+
+	<itemThumbnailImage>
+		thumbnails/dsc_0141.jpg
+	</itemThumbnailImage>
+
+	<itemThumbnailWidth>
+		63
+	</itemThumbnailWidth>
+
+	<itemThumbnailHeight>
+		90
+	</itemThumbnailHeight>
+
+	<itemName>
+		dsc_0141.jpg
+	</itemName>
+
+	<itemNumber>
+		6868
+	</itemNumber>
+
+	<itemOriginalPath>
+		d:\pictures\photos\2008 - 12\dsc_0141.jpg
+	</itemOriginalPath>
+
+
+	<itemNameOnly>
+		itemNameOnly UNDEFINED (9)
+	</itemNameOnly>
+	
+	<itemCaption>
+		dsc_0141.jpg
+	</itemCaption>
+
+	<itemSize>
+		itemSize UNDEFINED (9)
+	</itemSize>
+</image>
+<image>
+	
+	<isFirstImage>
+		false
+	</isFirstImage>
+	
+	<isPrevImage>
+		true
+	</isPrevImage>
+	
+	
+	<isLastImage>
+		true
+	</isLastImage>
+	
+	
+	
+	<isNextImage>
+		false
+	</isNextImage>
+	
+
+
+	<firstImage>
+		images/dsc_0004.jpg
+	</firstImage>
+	<itemLargeImage>
+		images/dsc_0149.jpg
+	</itemLargeImage>	
+	<nextImage>
+		
+	</nextImage>
+	<nextThumbnail>
+		
+	</nextThumbnail>
+	<prevImage>
+		dsc_0141.jpg
+	</prevImage>
+	<prevThumbnail>
+		dsc_0141.jpg
+	</prevThumbnail>
+	<lastImage>
+		images/dsc_0149.jpg
+	</lastImage>
+	<lastThumbnail>
+		thumbnails/dsc_0149.jpg
+	</lastThumbnail>
+
+	<itemWidth>
+		425
+	</itemWidth>
+
+	<itemHeight>
+		640
+	</itemHeight>
+
+	<itemThumbnailImage>
+		thumbnails/dsc_0149.jpg
+	</itemThumbnailImage>
+
+	<itemThumbnailWidth>
+		63
+	</itemThumbnailWidth>
+
+	<itemThumbnailHeight>
+		90
+	</itemThumbnailHeight>
+
+	<itemName>
+		dsc_0149.jpg
+	</itemName>
+
+	<itemNumber>
+		6876
+	</itemNumber>
+
+	<itemOriginalPath>
+		d:\pictures\photos\2008 - 12\dsc_0149.jpg
+	</itemOriginalPath>
+
+
+	<itemNameOnly>
+		itemNameOnly UNDEFINED (9)
+	</itemNameOnly>
+	
+	<itemCaption>
+		dsc_0149.jpg
+	</itemCaption>
+
+	<itemSize>
+		itemSize UNDEFINED (9)
+	</itemSize>
+</image>
+</images>
+</album>
