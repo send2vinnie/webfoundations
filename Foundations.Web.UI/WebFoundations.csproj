@@ -34,6 +34,10 @@
     <NoWarn>1591</NoWarn>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Elmah, Version=1.1.11517.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\ELMAH-64\bin\net-3.5\Release\Elmah.dll</HintPath>
+    </Reference>
     <Reference Include="OpenRasta">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>$(ProgramFiles32)\OpenRasta\2.0\net-35\OpenRasta.dll</HintPath>
