@@ -1,8 +1,0 @@
-User-Agent: *
-Disallow: /CMS/
-Disallow: /Controls/
-Disallow: /CSS/
-Disallow: /Javascript/
-Disallow: /fckeditor/
-
-Disallow: *.master

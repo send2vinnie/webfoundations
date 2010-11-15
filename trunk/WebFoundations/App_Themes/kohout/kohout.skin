@@ -1,8 +1,0 @@
-﻿<asp:TextBox runat="server" OnClick="this.className='textBoxHighlight';" OnBlur="this.className='textBox';" CssClass="textBox" />
-<asp:DropDownList runat="server" OnClick="this.className='selectListHighlight';" OnBlur="this.className='selectList';" CssClass="selectList" />
-<asp:RadioButtonList runat="server" RepeatLayout="Flow" CssClass="radioButtonList" />
-
-<asp:Button runat="server" CssClass="button" />
-<asp:RequiredFieldValidator runat="server" CssClass="errorMessage" />
-<asp:RegularExpressionValidator runat="server" CssClass="errorMessage" />
-<asp:CompareValidator runat="server" CssClass="errorMessage" />
