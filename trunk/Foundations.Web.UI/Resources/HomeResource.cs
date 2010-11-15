@@ -10,7 +10,7 @@
 
 using System;
 
-namespace WebFoundations.Resources {
+namespace Foundations.Web.UI.Resources {
   public class HomeResource {
 
   }
