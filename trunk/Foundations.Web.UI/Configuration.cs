@@ -25,9 +25,10 @@ namespace Foundations.Web.UI {
     public void Configure() {
       using (OpenRastaConfiguration.Manual)
       {
+        ResourceSpace.Uses.PipelineContributor<ErrorContributor>();
+
         ResourceSpace.Has.ResourcesOfType<HomeResource>()
-            .AtUri("/home")
-            .And.AtUri("/")
+            .AtUri("/")
             .HandledBy<HomeHandler>()
             .RenderedByAspx("~/Views/HomeView.aspx");
 
