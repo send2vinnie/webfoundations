@@ -17,10 +17,10 @@ using OpenRasta.DI;
 using OpenRasta.Web;
 using OpenRasta.Web.Codecs;
 using OpenRasta.Web.UriDecorators;
-using WebFoundations.Handlers;
-using WebFoundations.Resources;
+using Foundations.Web.UI.Handlers;
+using Foundations.Web.UI.Resources;
 
-namespace WebFoundations {
+namespace Foundations.Web.UI {
   public class Configuration : IConfigurationSource {
     public void Configure() {
       using (OpenRastaConfiguration.Manual)

@@ -1,2 +1,24 @@
-Open the WebFoundations.sln (with Visual Studion 2008 or Visual Web Developer 2008 Express Edition)
-Hit F5 (or run)
+Building WebFoundations
+------------------------------
+Dependencies
+- Ruby  (Windows Installer available at http://rubyinstaller.org/download.html)
+- Albacore (Run install InstallGems.bat at the project root to install)
+
+Persistance
+- Instructions for deploying database goes here
+
+Configuration
+QTrac includes a template configuration file (build/config/env.setting.template) for managing build and runtime settings.  Copy and rename this file to make environmental specific settings.  A default environment of "local" is assumed by the build scripts (i.e. local.settings).
+
+Ex. env.settings.template copy and rename local.settings
+
+You can create multiple environment settings files to distinguish between different deployment environments (ie. prod.settings, myserver.settings, etc.)
+
+Available Build Tasks
+To view the available build tasks, use a command line in the project root and enter the following command:
+rake --tasks
+
+
+
+
+

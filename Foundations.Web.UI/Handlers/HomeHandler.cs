@@ -9,9 +9,9 @@
 #endregion
 
 using System;
-using WebFoundations.Resources;
+using Foundations.Web.UI.Resources;
 
-namespace WebFoundations.Handlers {
+namespace Foundations.Web.UI.Handlers {
   public class HomeHandler {
     public object Get() {
       return new HomeResource();
