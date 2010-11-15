@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<Styles>
-	<Style name="Highlight" element="div">
-		<Attribute name="class" value="introText" />
-	</Style>
-  <Style name="Heading 1" element="h1" />
-  <Style name="Heading 2" element="h2" />
-</Styles>
