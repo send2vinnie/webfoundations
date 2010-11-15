@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" Inherits="OpenRasta.Codecs.WebForms.ResourceView<HomeResource>" MasterPageFile="~/Views/HomeView.Master" %>
+﻿<%@ Page Language="C#" Inherits="OpenRasta.Codecs.WebForms.ResourceView<HomeResource>" MasterPageFile="~/Themes/Default/Default.Master" %>
 
 <asp:Content ContentPlaceHolderID="body" ID="content" runat="server">
     <div>

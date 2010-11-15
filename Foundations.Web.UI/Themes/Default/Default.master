@@ -1,26 +1,24 @@
-<%@ Master 
-Language="C#" 
-AutoEventWireup="true" 
-CodeFile="kohout.master.cs" 
-Inherits="kohout" 
-%>
-<%@ Register Src="~/Controls/CMS.ascx" TagName="CMS" TagPrefix="cms" %>
-<%@ Register src="../controls/LanguageSelector.ascx" tagname="LanguageSelector" tagprefix="uc1" %>
+﻿<%@ Master Language="C#" Inherits="OpenRasta.Codecs.WebForms.MasterPageView" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head runat="server">
+  <head id="Head1" runat="server">
+    <title>WebFoundations</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="copyright" content="" />
-    <meta name="description" content="..." />
-    <meta name="keywords" content="..." />
-    <meta name="robots" content="all,follow" />
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+      <meta name="description" content="..." />
+      <meta name="keywords" content="..." />
+      <meta name="robots" content="all,follow" />
+    </asp:ContentPlaceHolder>
+    
+    <meta name="copyright" content="Courtenay Probert" />
 
     <style type="text/css" media="screen">
-        @import url('<%=Page.ResolveClientUrl("~/static/css/theme-kohout.css")%>');
+        @import url('<%=Page.ResolveClientUrl("~/Themes/Default/Stylesheets/Default.css")%>');
     </style>
 
-    <title>WebFoundations</title>
+    
   </head>
   <body>
   <form id="form1" runat="server">
@@ -29,7 +27,6 @@ Inherits="kohout"
       
       <!-- Hlavička -->
       <div id="header">
-        <span style="float: right; margin: 5px 5px 0 0;"><uc1:LanguageSelector ID="LanguageSelector1" runat="server" /></span>
         <h1 id="logo"><a href="./" title="WebFoundations">WebFoundations</a></h1>
         <hr class="noscreen" />
       </div>
@@ -50,18 +47,16 @@ Inherits="kohout"
           <div id="intro">
             <div id="intro-in">
             <p class="intro">
-            <asp:ContentPlaceHolder id="TopContent" runat="server">
-                <cms:CMS ID="CMS1" runat="server" Instance="0" />
-            </asp:ContentPlaceHolder>
+              Intro
             </p>
             </div>
           </div>
           
           <div id="obsah" class="content box">
           <div class="in">
-            <asp:ContentPlaceHolder id="MainContent" runat="server">
-                <cms:CMS ID="CMS2" runat="server" Instance="1" />
-            </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="body" runat="server">
+        
+                </asp:ContentPlaceHolder>
             <div class="clear"></div>
           </div>
         </div>
@@ -69,7 +64,7 @@ Inherits="kohout"
       </div>
       
       <div id="footer" class="shadow">
-		<div class="f-left">© <asp:Literal ID="litCopyright" runat="server" Text="<%$ Resources:Resource, litCopyright %>"/>
+		<div class="f-left">© Courtenay Probert
 		    &nbsp;-&nbsp;Designed by <a href="http://www.davidkohout.cz">David Kohout</a></div>
 		<div class="f-right"><asp:HyperLink runat="server" ID="lnkSignin" /></div>
       </div>
