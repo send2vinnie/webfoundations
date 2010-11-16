@@ -1,11 +1,12 @@
-﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{D862FFF3-80EB-47C5-9AC2-0F733FB82C98}</ProjectGuid>
-    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WebFoundations</RootNamespace>
@@ -34,30 +35,6 @@
     <NoWarn>1591</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Elmah, Version=1.1.11517.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Libraries\ELMAH\bin\net-3.5\Release\Elmah.dll</HintPath>
-    </Reference>
-    <Reference Include="OpenRasta">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>$(ProgramFiles32)\OpenRasta\2.0\net-35\OpenRasta.dll</HintPath>
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="OpenRasta.Codecs.SharpView">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>$(ProgramFiles32)\OpenRasta\2.0\net-35\OpenRasta.Codecs.SharpView.dll</HintPath>
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="OpenRasta.Codecs.WebForms">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>$(ProgramFiles32)\OpenRasta\2.0\net-35\OpenRasta.Codecs.WebForms.dll</HintPath>
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="OpenRasta.Hosting.AspNet">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>$(ProgramFiles32)\OpenRasta\2.0\net-35\OpenRasta.Hosting.AspNet.dll</HintPath>
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Core">
@@ -79,6 +56,26 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Web.Mobile" />
+    <Reference Include="OpenRasta.Codecs.SharpView, Version=2.0.3214.437, Culture=neutral, PublicKeyToken=84191a26cb6a146c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\QTrac\Libraries\OpenRasta\net-35\OpenRasta.Codecs.SharpView.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenRasta.Codecs.WebForms, Version=2.0.3214.437, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\QTrac\Libraries\OpenRasta\net-35\OpenRasta.Codecs.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenRasta, Version=2.0.3214.437, Culture=neutral, PublicKeyToken=e04bf464d7caae73">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\QTrac\Libraries\OpenRasta\net-35\OpenRasta.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenRasta.Hosting.AspNet, Version=2.0.3214.437, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\QTrac\Libraries\OpenRasta\net-35\OpenRasta.Hosting.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Elmah, Version=1.1.11517.0, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\ELMAH-64\bin\net-3.5\Release\Elmah.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="default.aspx" />
@@ -137,5 +134,10 @@
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>
+    <MonoDevelop>
+      <Properties VerifyCodeBehindFields="true" VerifyCodeBehindEvents="true">
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="true" />
+      </Properties>
+    </MonoDevelop>
   </ProjectExtensions>
 </Project>
